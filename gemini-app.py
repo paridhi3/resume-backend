@@ -1,19 +1,20 @@
 import streamlit as st
 import fitz  # PyMuPDF
-import openai
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
 import pandas as pd
 import json
 import os
 from dotenv import load_dotenv
-from openai import OpenAI
+import google.generativeai as genai
+import re
+import json
 
 # -------------------------
 # CONFIG
 # -------------------------
 load_dotenv()
-openai.api_key = os.getenv("OPENAI_API_KEY")
+genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
 embedding_model = SentenceTransformer("all-MiniLM-L6-v2")  # free & lightweight
 
@@ -36,10 +37,10 @@ def compute_similarity(jd_text, resume_text):
     return round(float(score) * 100, 2)  # convert to percentage
 
 def analyze_with_llm(jd_text, resume_text, score):
-    """Use OpenAI LLM to analyze resume vs JD and return JSON."""
+    """Use Google Gemini LLM to analyze resume vs JD and return JSON."""
     prompt = f"""
-You are an AI-powered Applicant Tracking System (ATS). 
-Your task is to analyze how well a given resume matches a job description. 
+You are an AI-powered Applicant Tracking System (ATS).
+Your task is to analyze how well a given resume matches a job description.
 You must consider **skills, experience, education, and keywords**.
 
 Return output strictly in **valid JSON** with this schema:
@@ -69,54 +70,71 @@ Job Description:
 Resume:
 {resume_text}
 """
-    client = OpenAI()
+    model = genai.GenerativeModel("gemini-1.5-flash")
+    response = model.generate_content(prompt)
+    llm_result = response.text
+    return llm_result
 
-    response = client.chat.completions.create(
-        model="gpt-3.5-turbo",
-        messages=[
-            {"role": "system", "content": "You are a resume analyzer."},
-            {"role": "user", "content": f"JD: {jd_text}\nResume: {resume_text}\nBaseline Score: {baseline_score}"}
-        ]
-    )
+def parse_gemini_json(text: str):
+    """
+    Extract JSON from Gemini LLM output, even if it's wrapped in code blocks
+    or contains extra whitespace/newlines.
+    """
+    # Remove code block markers
+    text = re.sub(r"```json|```", "", text, flags=re.IGNORECASE).strip()
 
-    llm_result = response.choices[0].message.content
+    # Extract the first {...} block
+    match = re.search(r"(\{.*\})", text, re.DOTALL)
+    if match:
+        json_str = match.group(1)
+    else:
+        return {"category": "Error", "final_score": 0, "reasons": ["Failed to parse LLM output"]}
 
-    # try parsing JSON safely
+    # Parse JSON safely
     try:
-        parsed = json.loads(llm_result)
+        return json.loads(json_str)
     except json.JSONDecodeError:
-        parsed = {"category":"Error","final_score":0,"reasons":["Failed to parse LLM output"]}
-    return parsed
+        return {"category": "Error", "final_score": 0, "reasons": ["Failed to parse LLM output"]}
+
 
 # -------------------------
 # STREAMLIT UI
 # -------------------------
-st.title("📄 AI Resume–JD Analyzer (Prototype)")
+st.title("📄 AI Resume–JD Analyzer (Prototype, Gemini)")
 
 jd_file = st.file_uploader("Upload Job Description (PDF)", type=["pdf"])
 resume_files = st.file_uploader("Upload Resumes (PDF)", type=["pdf"], accept_multiple_files=True)
 
 if jd_file and resume_files:
     jd_text = extract_text_from_pdf(jd_file)
-    results = []
-
+    results = []    
     for resume_file in resume_files:
         resume_text = extract_text_from_pdf(resume_file)
         baseline_score = compute_similarity(jd_text, resume_text)
-        llm_result = analyze_with_llm(jd_text, resume_text, baseline_score)
+        llm_result_str = analyze_with_llm(jd_text, resume_text, baseline_score)
+        llm_result = parse_gemini_json(llm_result_str)
+
+        # Flatten reasons into a single string
+        reasons_str = " | ".join(llm_result.get("reasons", []))
 
         results.append({
             "Candidate": resume_file.name,
             "Baseline Score": baseline_score,
             "Final Score": llm_result.get("final_score"),
             "Category": llm_result.get("category"),
-            "Reasons": "; ".join(llm_result.get("reasons", []))
+            "Reasons": reasons_str
         })
 
-    df = pd.DataFrame(results)
-    st.subheader("📊 Results")
-    st.dataframe(df, use_container_width=True)
+# CSV export
+df = pd.DataFrame(results)
+st.subheader("📊 Results")
+st.dataframe(df, use_container_width=True)
 
-    # Export option
-    csv = df.to_csv(index=False).encode("utf-8")
-    st.download_button("Download Results as CSV", csv, "results.csv", "text/csv")
+# Export CSV
+csv = df.to_csv(index=False).encode("utf-8")
+st.download_button(
+    "Download Results as CSV",
+    data=csv,
+    file_name="resume_analysis.csv",
+    mime="text/csv"
+)
