@@ -100,14 +100,21 @@ def parse_gemini_json(text: str):
 # -------------------------
 # STREAMLIT UI
 # -------------------------
-st.title("📄 AI Resume–JD Analyzer (Prototype, Gemini)")
+st.title("📄 AI Resume Analyzer")
 
-jd_file = st.file_uploader("Upload Job Description (PDF)", type=["pdf"])
+jd_input_type = st.radio("Choose Job Description input method:", ["Upload PDF", "Enter Text"])
+
+jd_text = ""
+if jd_input_type == "Upload PDF":
+    jd_file = st.file_uploader("Upload Job Description (PDF)", type=["pdf"])
+    if jd_file:
+        jd_text = extract_text_from_pdf(jd_file)
+else:
+    jd_text = st.text_area("Paste Job Description text here")
+
 resume_files = st.file_uploader("Upload Resumes (PDF)", type=["pdf"], accept_multiple_files=True)
-
-if jd_file and resume_files:
-    jd_text = extract_text_from_pdf(jd_file)
-    results = []    
+results = []    
+if jd_text and resume_files:
     for resume_file in resume_files:
         resume_text = extract_text_from_pdf(resume_file)
         baseline_score = compute_similarity(jd_text, resume_text)
@@ -125,16 +132,20 @@ if jd_file and resume_files:
             "Reasons": reasons_str
         })
 
-# CSV export
-df = pd.DataFrame(results)
-st.subheader("📊 Results")
-st.dataframe(df, use_container_width=True)
+# -------------------------
+# Display Results and Export
+# -------------------------
+if results:
+    df = pd.DataFrame(results)
+    st.subheader("📊 Results")
+    st.dataframe(df, use_container_width=True)
 
-# Export CSV
-csv = df.to_csv(index=False).encode("utf-8")
-st.download_button(
-    "Download Results as CSV",
-    data=csv,
-    file_name="resume_analysis.csv",
-    mime="text/csv"
-)
+    # Export CSV
+    csv = df.to_csv(index=False).encode("utf-8")
+    st.download_button(
+        "Download Results as CSV",
+        data=csv,
+        file_name="resume_analysis.csv",
+        mime="text/csv"
+    )
+
