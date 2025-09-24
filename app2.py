@@ -11,7 +11,6 @@ from openai import OpenAI
 import openai
 from openai import AzureOpenAI
 import re
-import json
 from pyresparser import ResumeParser
 import tempfile
 import shutil
@@ -20,19 +19,20 @@ import shutil
 # CONFIG
 # -------------------------
 load_dotenv()
-# genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
-# client = OpenAI(api_key=os.getenv("AZURE_OPENAI_API_KEY"))
+
+# Configure Azure OpenAI client
 client = AzureOpenAI(
     api_key=os.getenv("AZURE_OPENAI_API_KEY"),
     api_version=os.getenv("API_VERSION"),
     azure_endpoint=os.getenv("AZURE_OPENAI_ENDPOINT"),
 )
 
-embedding_model = SentenceTransformer("all-MiniLM-L6-v2")  # free & lightweight
+embedding_model = SentenceTransformer("all-MiniLM-L6-v2")  # Free & lightweight model for embeddings
 
 # -------------------------
 # HELPER FUNCTIONS
 # -------------------------
+
 def extract_text_from_pdf(uploaded_file):
     """Extracts text from PDF using PyMuPDF (fitz)."""
     text = ""
@@ -41,86 +41,34 @@ def extract_text_from_pdf(uploaded_file):
             text += page.get_text("text") + "\n"
     return text.strip()
 
-# def save_temp_file(uploaded_file):
-#     """
-#     Save the uploaded resume file temporarily and return the file path.
-#     """
-#     # Create a temporary directory for storing files
-#     temp_dir = tempfile.mkdtemp()
+def compute_similarity(jd_text, resume_text):
+    """Compute cosine similarity between JD and Resume embeddings."""
+    jd_emb = embedding_model.encode([jd_text])
+    resume_emb = embedding_model.encode([resume_text])
+    score = cosine_similarity(jd_emb, resume_emb)[0][0]
+    return round(float(score) * 100, 2)  # Convert to percentage
 
-#     # Create a file path inside the temporary directory
-#     file_path = os.path.join(temp_dir, uploaded_file.name)
+def parse_llm_json(text: str):
+    """
+    Extract JSON from LLM output, even if it's wrapped in code blocks
+    or contains extra whitespace/newlines.
+    """
+    # Remove code block markers
+    text = re.sub(r"```json|```", "", text, flags=re.IGNORECASE).strip()
 
-#     # Write the uploaded file to the temporary location
-#     with open(file_path, "wb") as f:
-#         f.write(uploaded_file.getvalue())
+    # Extract the first {...} block
+    match = re.search(r"(\{.*\})", text, re.DOTALL)
+    if match:
+        json_str = match.group(1)
+    else:
+        return {"category": "Error", "final_score": 0, "reasons": ["Failed to parse LLM output"]}
 
-#     return file_path, temp_dir
+    # Parse JSON safely
+    try:
+        return json.loads(json_str)
+    except json.JSONDecodeError:
+        return {"category": "Error", "final_score": 0, "reasons": ["Failed to parse LLM output"]}
 
-# def cleanup_temp_dir(temp_dir):
-#     """Clean up the temporary directory after processing."""
-#     if os.path.exists(temp_dir):
-#         shutil.rmtree(temp_dir)
-
-# def parse_with_pyresparser(resume_path):
-#     return ResumeParser(resume_path).get_extracted_data()
-
-# def generate_resume_summary_llm(raw_resume_text):
-#     """
-#     Use an LLM to generate a professional summary from raw resume text.
-#     """
-#     prompt = f"""
-# You are a resume expert. Read the following resume text and generate a 2-3 sentence professional summary.
-
-# Resume:
-# {raw_resume_text}
-# """
-
-#     response = client.chat.completions.create(
-#         model=os.getenv("MODEL_NAME"),
-#         messages=[{"role": "user", "content": prompt}],
-#         temperature=0.3
-#     )
-
-#     # Assuming the LLM returns a clean summary, extract it
-#     return response.choices[0].message.content.strip()
-
-# def combine_resume_data(resume_path, raw_resume_text):
-#     """
-#     Combine the extracted data from `pyresparser` with the LLM-generated summary.
-#     """
-#     # Step 1: Extract structured data from pyresparser
-#     parsed_data = parse_with_pyresparser(resume_path)
-
-#     # Step 2: Generate summary using LLM
-#     summary = generate_resume_summary_llm(raw_resume_text)
-
-#     # Step 3: Append the summary to the parsed data
-#     parsed_data["summary"] = summary
-
-#     return parsed_data
-
-# def update_metadata_file(new_entry, metadata_path="metadata.json"):
-#     """
-#     Add or update resume metadata in the metadata.json file.
-#     """
-#     # Load existing metadata
-#     if os.path.exists(metadata_path):
-#         with open(metadata_path, "r") as f:
-#             try:
-#                 metadata = json.load(f)
-#             except json.JSONDecodeError:
-#                 metadata = {}
-#     else:
-#         metadata = {}
-
-#     # Update with new entry (using filename as the key)
-#     filename = list(new_entry.keys())[0]  # Get filename from the new entry
-#     metadata[filename] = new_entry[filename]
-
-#     # Save back to file
-#     with open(metadata_path, "w") as f:
-#         json.dump(metadata, f, indent=2)
 def process_and_save_resume(uploaded_file, metadata_path="metadata.json"):
     """
     Process the uploaded resume file: 
@@ -128,14 +76,6 @@ def process_and_save_resume(uploaded_file, metadata_path="metadata.json"):
     - Parse resume data using PyResParser.
     - Generate a summary using LLM.
     - Combine all data and save to metadata.json.
-
-    Parameters:
-    - uploaded_file: The uploaded resume file.
-    - jd_text: The job description text to be used for analysis.
-    - metadata_path: The path to the metadata JSON file.
-
-    Returns:
-    - dict: Combined resume data including the LLM summary and parsed data.
     """
     # Save the file temporarily and extract its text
     temp_dir = tempfile.mkdtemp()
@@ -176,15 +116,6 @@ def process_and_save_resume(uploaded_file, metadata_path="metadata.json"):
         if os.path.exists(temp_dir):
             shutil.rmtree(temp_dir)
 
-def extract_text_from_pdf(uploaded_file_path):
-    """Extracts text from PDF using PyMuPDF (fitz)."""
-    import fitz  # PyMuPDF
-    text = ""
-    with fitz.open(uploaded_file_path) as doc:
-        for page in doc:
-            text += page.get_text("text") + "\n"
-    return text.strip()
-
 def update_metadata_file(new_entry, filename, metadata_path="metadata.json"):
     """
     Add or update resume metadata in the metadata.json file.
@@ -206,15 +137,47 @@ def update_metadata_file(new_entry, filename, metadata_path="metadata.json"):
     with open(metadata_path, "w") as f:
         json.dump(metadata, f, indent=2)
 
-def compute_similarity(jd_text, resume_text):
-    """Compute cosine similarity between JD and Resume embeddings."""
-    jd_emb = embedding_model.encode([jd_text])
-    resume_emb = embedding_model.encode([resume_text])
-    score = cosine_similarity(jd_emb, resume_emb)[0][0]
-    return round(float(score) * 100, 2)  # convert to percentage
+def analyze_with_llm(jd_text, metadata: dict, baseline_score):
+    """
+    Use LLM to analyze resume metadata against a job description.
 
-def analyze_with_llm(jd_text, resume_text, score):
-    """Use LLM to analyze resume vs JD and return JSON."""
+    Parameters:
+    - jd_text: Job description as plain text.
+    - metadata: Parsed resume details from metadata.json.
+    - baseline_score: Initial similarity score from embedding comparison.
+
+    Returns:
+    - JSON string response from LLM.
+    """
+    # Create a simplified view of the resume from metadata
+    name = metadata.get("name", "Unknown")
+    email = metadata.get("email", "Not Provided")
+    phone = metadata.get("mobile_number", "Not Provided")
+    skills = ", ".join(metadata.get("skills", []))
+    experience = metadata.get("experience", "Not Specified")
+    education = ", ".join(metadata.get("education", [])) if isinstance(metadata.get("education"), list) else metadata.get("education", "")
+    summary = metadata.get("summary", "")
+
+    # Construct a synthetic resume from metadata
+    resume_synth = f"""
+Name: {name}
+Email: {email}
+Phone: {phone}
+
+Professional Summary:
+{summary}
+
+Skills:
+{skills}
+
+Experience:
+{experience}
+
+Education:
+{education}
+"""
+
+    # LLM prompt
     prompt = f"""
 You are an AI-powered Applicant Tracking System (ATS).
 Your task is to analyze how well a given resume matches a job description.
@@ -232,7 +195,7 @@ Return output strictly in **valid JSON** with this schema:
 }}
 
 Instructions:
-1. First, consider the baseline similarity score: {score}.
+1. First, consider the baseline similarity score: {baseline_score}.
 2. Adjust the final_score based on skills, experience, and job requirements.
 3. Place the resume in one of three categories:
    - Suitable: strong match (generally >70)
@@ -245,41 +208,16 @@ Job Description:
 {jd_text}
 
 Resume:
-{resume_text}
+{resume_synth}
 """
-    # model = genai.GenerativeModel("gemini-1.5-flash")
-    # response = model.generate_content(prompt)
-    # llm_result = response.text
-    # return llm_result
+
     response = client.chat.completions.create(
-        model=os.getenv("MODEL_NAME"),  # deployment name
+        model=os.getenv("MODEL_NAME"),
         messages=[{"role": "user", "content": prompt}],
         temperature=0.3
     )
 
     return response.choices[0].message.content
-
-def parse_llm_json(text: str):
-    """
-    Extract JSON from Gemini LLM output, even if it's wrapped in code blocks
-    or contains extra whitespace/newlines.
-    """
-    # Remove code block markers
-    text = re.sub(r"```json|```", "", text, flags=re.IGNORECASE).strip()
-
-    # Extract the first {...} block
-    match = re.search(r"(\{.*\})", text, re.DOTALL)
-    if match:
-        json_str = match.group(1)
-    else:
-        return {"category": "Error", "final_score": 0, "reasons": ["Failed to parse LLM output"]}
-
-    # Parse JSON safely
-    try:
-        return json.loads(json_str)
-    except json.JSONDecodeError:
-        return {"category": "Error", "final_score": 0, "reasons": ["Failed to parse LLM output"]}
-
 
 # -------------------------
 # STREAMLIT UI
@@ -332,4 +270,3 @@ if results:
         file_name="resume_analysis.csv",
         mime="text/csv"
     )
-
