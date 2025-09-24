@@ -21,7 +21,7 @@ client = AzureOpenAI(
     azure_endpoint=os.getenv("AZURE_OPENAI_ENDPOINT"),
 )
 
-embedding_model = SentenceTransformer("all-MiniLM-L6-v2", device=None)
+embedding_model = SentenceTransformer("all-MiniLM-L6-v2")
 METADATA_FILE = "metadata.json"
 
 # -------------------------
