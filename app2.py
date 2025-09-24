@@ -27,11 +27,114 @@ client = AzureOpenAI(
     azure_endpoint=os.getenv("AZURE_OPENAI_ENDPOINT"),
 )
 
-embedding_model = SentenceTransformer("all-MiniLM-L6-v2")  # Free & lightweight model for embeddings
+embedding_model = SentenceTransformer("all-MiniLM-L6-v2", device=None)
 
 # -------------------------
 # HELPER FUNCTIONS
 # -------------------------
+# def process_and_save_resume(uploaded_file, metadata_path="metadata.json"):
+#     """
+#     Process the uploaded resume file: 
+#     - Extract text from the PDF.
+#     - Parse resume data using PyResParser.
+#     - Generate a summary using LLM.
+#     - Combine all data and save to metadata.json.
+#     """
+#     # Save the file temporarily and extract its text
+#     temp_dir = tempfile.mkdtemp()
+#     file_path = os.path.join(temp_dir, uploaded_file.name)
+#     with open(file_path, "wb") as f:
+#         f.write(uploaded_file.getvalue())
+    
+#     try:
+#         # Step 1: Extract text from the resume PDF
+#         resume_text = extract_text_from_pdf(file_path)
+        
+#         # Step 2: Parse the resume data using pyresparser
+#         parsed_data = ResumeParser(file_path).get_extracted_data()
+
+#         # Step 3: Generate a professional summary using LLM
+#         prompt = f"""
+#         You are a resume expert. Read the following resume text and generate a 2-3 sentence professional summary.
+#         Resume:
+#         {resume_text}
+#         """
+#         response = openai.ChatCompletion.create(
+#             model=os.getenv("MODEL_NAME"),
+#             messages=[{"role": "user", "content": prompt}],
+#             temperature=0.3
+#         )
+#         summary = response.choices[0].message.content.strip()
+
+#         # Step 4: Combine the parsed data with the LLM summary
+#         parsed_data["summary"] = summary
+
+#         # Step 5: Update metadata file with the new entry
+#         update_metadata_file(parsed_data, uploaded_file.name, metadata_path)
+
+#         return parsed_data
+    
+#     finally:
+#         # Clean up the temporary directory
+#         if os.path.exists(temp_dir):
+#             shutil.rmtree(temp_dir)
+def process_and_save_resume(uploaded_file, resume_text, metadata_path="metadata.json"):
+    """
+    Process the uploaded resume file:
+    - Parse resume data using PyResParser.
+    - Generate a summary using LLM.
+    - Combine all data and save to metadata.json.
+    """
+    temp_dir = tempfile.mkdtemp()
+    file_path = os.path.join(temp_dir, uploaded_file.name)
+    with open(file_path, "wb") as f:
+        f.write(uploaded_file.getvalue())
+
+    try:
+        parsed_data = ResumeParser(file_path).get_extracted_data()
+
+        prompt = f"""
+        You are a resume expert. Read the following resume text and generate a 2-3 sentence professional summary.
+        Resume:
+        {resume_text}
+        """
+        response = openai.ChatCompletion.create(
+            model=os.getenv("MODEL_NAME"),
+            messages=[{"role": "user", "content": prompt}],
+            temperature=0.3
+        )
+        summary = response.choices[0].message.content.strip()
+
+        parsed_data["summary"] = summary
+        parsed_data["raw_text"] = resume_text  # Store raw text for similarity
+
+        update_metadata_file(parsed_data, uploaded_file.name, metadata_path)
+        return parsed_data
+
+    finally:
+        if os.path.exists(temp_dir):
+            shutil.rmtree(temp_dir)
+
+def update_metadata_file(new_entry, filename, metadata_path="metadata.json"):
+    """
+    Add or update resume metadata in the metadata.json file.
+    """
+    # Load existing metadata
+    if os.path.exists(metadata_path):
+        with open(metadata_path, "r") as f:
+            try:
+                metadata = json.load(f)
+            except json.JSONDecodeError:
+                metadata = {}
+    else:
+        metadata = {}
+
+    # Update with new entry (using filename as the key)
+    metadata[filename] = new_entry
+
+    # Save back to file
+    with open(metadata_path, "w") as f:
+        json.dump(metadata, f, indent=2)
 
 def extract_text_from_pdf(uploaded_file):
     """Extracts text from PDF using PyMuPDF (fitz)."""
@@ -41,8 +144,9 @@ def extract_text_from_pdf(uploaded_file):
             text += page.get_text("text") + "\n"
     return text.strip()
 
-def compute_similarity(jd_text, resume_text):
+def compute_similarity(jd_text, metadata):
     """Compute cosine similarity between JD and Resume embeddings."""
+    resume_text = metadata.get("raw_text", "")
     jd_emb = embedding_model.encode([jd_text])
     resume_emb = embedding_model.encode([resume_text])
     score = cosine_similarity(jd_emb, resume_emb)[0][0]
@@ -68,74 +172,6 @@ def parse_llm_json(text: str):
         return json.loads(json_str)
     except json.JSONDecodeError:
         return {"category": "Error", "final_score": 0, "reasons": ["Failed to parse LLM output"]}
-
-def process_and_save_resume(uploaded_file, metadata_path="metadata.json"):
-    """
-    Process the uploaded resume file: 
-    - Extract text from the PDF.
-    - Parse resume data using PyResParser.
-    - Generate a summary using LLM.
-    - Combine all data and save to metadata.json.
-    """
-    # Save the file temporarily and extract its text
-    temp_dir = tempfile.mkdtemp()
-    file_path = os.path.join(temp_dir, uploaded_file.name)
-    with open(file_path, "wb") as f:
-        f.write(uploaded_file.getvalue())
-    
-    try:
-        # Step 1: Extract text from the resume PDF
-        resume_text = extract_text_from_pdf(file_path)
-        
-        # Step 2: Parse the resume data using pyresparser
-        parsed_data = ResumeParser(file_path).get_extracted_data()
-
-        # Step 3: Generate a professional summary using LLM
-        prompt = f"""
-        You are a resume expert. Read the following resume text and generate a 2-3 sentence professional summary.
-        Resume:
-        {resume_text}
-        """
-        response = openai.ChatCompletion.create(
-            model=os.getenv("MODEL_NAME"),
-            messages=[{"role": "user", "content": prompt}],
-            temperature=0.3
-        )
-        summary = response.choices[0].message.content.strip()
-
-        # Step 4: Combine the parsed data with the LLM summary
-        parsed_data["summary"] = summary
-
-        # Step 5: Update metadata file with the new entry
-        update_metadata_file(parsed_data, uploaded_file.name, metadata_path)
-
-        return parsed_data
-    
-    finally:
-        # Clean up the temporary directory
-        if os.path.exists(temp_dir):
-            shutil.rmtree(temp_dir)
-
-def update_metadata_file(new_entry, filename, metadata_path="metadata.json"):
-    """
-    Add or update resume metadata in the metadata.json file.
-    """
-    # Load existing metadata
-    if os.path.exists(metadata_path):
-        with open(metadata_path, "r") as f:
-            try:
-                metadata = json.load(f)
-            except json.JSONDecodeError:
-                metadata = {}
-    else:
-        metadata = {}
-
-    # Update with new entry (using filename as the key)
-    metadata[filename] = new_entry
-
-    # Save back to file
-    with open(metadata_path, "w") as f:
-        json.dump(metadata, f, indent=2)
 
 def analyze_with_llm(jd_text, metadata: dict, baseline_score):
     """
@@ -238,12 +274,16 @@ resume_files = st.file_uploader("Upload Resumes (PDF)", type=["pdf"], accept_mul
 results = []    
 if jd_text and resume_files:
     for resume_file in resume_files:
-        resume_text = extract_text_from_pdf(resume_file)
-        baseline_score = compute_similarity(jd_text, resume_text)
-        llm_result_str = analyze_with_llm(jd_text, resume_text, baseline_score)
+        resume_text = fitz.open(stream=resume_file.read(), filetype="pdf")[0].get_text("text").strip()
+        parsed = process_and_save_resume(resume_file, resume_text, metadata_path="metadata.json")
+        baseline_score = compute_similarity(jd_text, parsed)
+        llm_result_str = analyze_with_llm(jd_text, parsed, baseline_score)
         llm_result = parse_llm_json(llm_result_str)
 
-        # Flatten reasons into a single string
+        if llm_result.get("category") == "Error":
+            st.warning(f"⚠️ Failed to parse LLM output for {resume_file.name}: {llm_result['reasons'][0]}")
+            continue
+
         reasons_str = " | ".join(llm_result.get("reasons", []))
 
         results.append({
