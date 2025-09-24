@@ -1,0 +1,733 @@
+{
+  "amazon-software-engineer-resume-example.pdf": {
+    "file_name": "amazon-software-engineer-resume-example.pdf",
+    "name": "Wendy Bailey",
+    "email": "w.bailey@email.com",
+    "skills": [
+      "Python",
+      "Subversion (SVN)",
+      "IntelliJ IDEA",
+      "PostgreSQL",
+      "Amazon Web Services (AWS)",
+      "Kubernetes",
+      "Travis CI",
+      "Angular",
+      "Selenium",
+      "Trello"
+    ],
+    "education": [
+      "Carnegie Mellon University - Bachelor of Science, Computer Science (2013 - 2017)"
+    ],
+    "experience": [
+      "Amazon - Software Engineer (2023 - current): Developed and deployed microservices on AWS using Kubernetes, automated testing with Selenium, released new Amazon Prime features, and created Python scripts for infrastructure automation.",
+      "Duolingo - Software Developer (2020 - 2023): Led a team to build interactive language learning features, introduced Angular-based authentication, reviewed code on SVN, and managed deployment checks with Travis CI.",
+      "BNY Mellon - Junior Software Developer (2017 - 2020): Designed PostgreSQL database schema, managed SQL queries for transaction processing, organized project tasks with Trello, and contributed to a fraud detection system."
+    ],
+    "summary": "Experienced software engineer with a strong background in developing scalable microservices, automating infrastructure, and building user-centric features for leading tech companies. Skilled in Python, AWS, Kubernetes, and modern development tools. Proven track record of improving user engagement, streamlining processes, and delivering high-impact solutions.",
+    "raw_text": "Wendy Bailey\nAmazon Software Engineer\nw.bailey@email.com\n(123) 456-7890\nPhiladelphia, PA\nLinkedIn\nWORK EXPERIENCE\nAmazon - Amazon Software Engineer\n2023 - current\nPhiladelphia, PA\nDeveloped and deployed 9 microservices using Kubernetes on AWS, increasing monthly email-\nbased user satisfaction ratings by 7%. \nAutomated regression and functional testing on Selenium, reducing manual testing by 6 hours. \nReleased 2 new features for Amazon Prime, growing user subscriptions by 18% within three\nmonths.\nCreated custom Python scripts to automate infrastructure management tasks, saving 7 hours hours\neach week.\nDuolingo - Software Developer\n2020 - 2023\nPittsburgh, PA\nLed a team on IntelliJ IDEA to build 6 interactive language learning features that boosted monthly\nuser engagement by 21%.\nIntroduced Angular-based authentication features for the sign-up process, lowering monthly user\ndropout rates by 24%.\nCollaborated with 3 developers to review source codes on SVN, preventing code conflicts.\nHeld pre-deployment checks with Travis CI, ensuring smooth updates while slashing post-release\nhotfixes by 37%.\nBNY Mellon - Junior Software Developer\n2017 - 2020\nPittsburgh, PA\nAssisted in designing a PostgreSQL database schema that cut down data retrieval speeds by 9\nminutes.\nOversaw complex SQL queries and routines for transaction processing, raising the system's\nthroughput by 29%. \nUsed Trello to organize project tasks, improving the team’s on-time project submissions by 48%.\nContributed to developing a PostgreSQL-based fraud detection system, decreasing annual\nfraudulent transactions by 9%.\nEDUCATION\nCarnegie Mellon University - Bachelor of Science, Computer Science\n2013 - 2017\nPittsburgh, PA\nSKILLS\nPython; Subversion (SVN); IntelliJ IDEA; PostgreSQL; Amazon Web Services (AWS); Kubernetes; Travis CI;\nAngular; Selenium; Trello"
+  },
+  "associate-software-engineer-resume-example.pdf": {
+    "file_name": "associate-software-engineer-resume-example.pdf",
+    "name": "Tamara Turbinado",
+    "email": "Tamar@email.com",
+    "skills": [
+      "HTML",
+      "CSS",
+      "Bootstrap",
+      "SASS",
+      "JavaScript",
+      "React",
+      "jQuery",
+      "Express.JS",
+      "MongoDB",
+      "Agile Scrum",
+      "RESTful API Development"
+    ],
+    "education": [
+      "Bachelor of Science in Computer Science, San Jose State University, 2017 - 2021, San Jose, CA"
+    ],
+    "experience": [
+      "Associate Software Engineer at Boeing, Mountain View, CA (July 2021 - current): Developed, tested, debugged, and documented over 33 software applications; coached junior engineers; contributed to agile scrum team and CICD; documented software changes for engineering and QA teams."
+    ],
+    "summary": "Tamara Turbinado is a dedicated Associate Software Engineer with a 4-year Computer Science degree and over one year of professional experience. She specializes in JavaScript and related technologies, solving real-world problems through code. Tamara has hands-on industry experience at Boeing and is eager to apply her skills to a growing business like Amazon.",
+    "raw_text": "Tamara Turbinado\nAssociate Software Engineer\nProven Associate Software Engineer with 4-year Computer Science\ndegree and 1+ years of experience. As a dedicated problem solver, I\ndisplay an expert skill in JavaScript and supporting\nlanguages/libraries/frameworks that solve real-world problems\nthrough code. Through my time at Boeing, I have gained further\nhands-on experience in industry-standard development, which I'm\nlooking to apply to a growing business like Amazon.\nTamar@email.com\n(123) 456-7890\nSan Jose, CA\nlinkedin.com\nWORK EXPERIENCE\nBoeing\nAssociate Software Engineer\nMountain View, CA | July 2021 - current\nDeveloped, tested, debugged, and documented 33+ software\napplications\nUsed established coding standards and methodologies and\ncoached 2 junior engineers on best practices\nWorked within an agile scrum team, contributing to 100%\ncontinuous improvement and deployment (CICD)\nDesigned and developed 26+ software applications based on\nuser stories, requirements, and design specifications\nDocumented software changes for use by 37+ engineers, quality\nassurance and documentation specialists\nPROJECTS\nStreamer Highlighter\nDesigned mobile-first project to help 1,300+ users discover\nsmaller streamers on the Twitch.tv platform, providing a user\nexperience through advanced search integration with Twitch\nDeveloped 100% RESTful API to control user functions using\nExpress.JS with MongoDB as a persistence layer while utilizing\nReact on the frontend\nCreated Mobile Responsive User Experience with CSS Grids that\nintegrated with Twitch API data to allow users to see viewers\nand gameplay of the streamers\nHospitality Highlighter\nCreated an application to alert 8-person staff to needed service\nat tables\nDesigned an easy-to-understand-and-use front-end, enabling\ncustomers and staff to alert and be alerted to requests\nImplemented Hospitality Highlighter with technology like\nExpress and MongoDB to manage and pass requests from the\nJavaScript/React front-end\nSKILLS\nHTML\nCSS\nBootstrap\nSASS\nJavaScript\nReact\njQuery\nEDUCATION\nBachelor of Science\nComputer Science\nSan Jose State\nUniversity\n2017 - 2021\nSan Jose, CA"
+  },
+  "backend-software-engineer-resume-example.pdf": {
+    "file_name": "backend-software-engineer-resume-example.pdf",
+    "name": "Amanda Taylor",
+    "email": "a.taylor@email.com",
+    "skills": [
+      "Visual Studio Code",
+      "Git",
+      "Python",
+      "Django",
+      "PostgreSQL",
+      "MongoDB",
+      "Postman",
+      "Docker",
+      "AWS",
+      "Jenkins"
+    ],
+    "education": [
+      "Bachelor of Science in Computer Science and Engineering, University of Washington, 2014 - 2017, Seattle, WA"
+    ],
+    "experience": [
+      "Backend Software Engineer at Smartsheet (2022 - current): Led migration of legacy system to AWS, developed backend APIs with Django, managed CI/CD pipelines using Jenkins, and improved system performance with Python scripts.",
+      "Associate Software Engineer at Avalara (2019 - 2022): Improved database indexing in PostgreSQL, supervised API testing setup with Postman, overhauled Docker strategy, promoted Visual Studio Code adoption, and conducted developer training.",
+      "Junior Backend Developer at Redfin (2017 - 2019): Negotiated cloud service agreements, implemented Git for source control, optimized MongoDB database performance, and reduced technical debt in legacy code."
+    ],
+    "summary": "Experienced backend software engineer with a strong background in Python, Django, and cloud technologies. Proven track record of optimizing system performance, reducing costs, and streamlining deployment processes. Adept at leading technical migrations and mentoring junior developers to enhance team productivity.",
+    "raw_text": "AMANDA\nTAYLOR\nBackend Software\nEngineer\na.taylor@email.com\n(123) 456-7890\nBellevue, WA\nLinkedIn\nEDUCATION\nBachelor of Science\nComputer Science and\nEngineering\nUniversity of Washington\n2014 - 2017\nSeattle, WA\nSKILLS\nVisual Studio Code\nGit\nPython\nDjango\nPostgreSQL\nMongoDB\nPostman\nDocker\nAWS\nJenkins\nWORK EXPERIENCE\nBackend Software Engineer\nSmartsheet\n2022 - current\nBellevue, WA\nLed the migration of a legacy system to AWS, reducing\nserver costs by $42,983 per year\nDeveloped backend APIs with Django, increasing\ntransaction processing speed by 21%\nManaged CI/CD pipelines using Jenkins, reducing\ndeployment times by 31 minutes per release\nAnalyzed system performance using Python scripts,\nidentifying and resolving bottlenecks that improved\nresponse times by 17%\nAssociate Software Engineer\nAvalara\n2019 - 2022\nSeattle, WA\nSystematized database indexing in PostgreSQL, decreasing\nquery response times by 19%\nSupervised the setup of Postman collections for API testing,\nwhich streamlined the QA process and bolstered testing\nefficiency\nOverhauled the existing Docker container strategy, resulting\nin a 21% increase in application performance\nPersuaded the team to transition to Visual Studio Code,\nenhancing development speed and collaboration\nConducted training sessions that led to a 23% improvement\nin junior developers' coding efficiency\nJunior Backend Developer\nRedfin\n2017 - 2019\nSeattle, WA\nNegotiated with cloud service providers, securing better\npricing agreements that saved the company $5,817 per year\nSpearheaded the implementation of Git for source control,\nminimizing deployment issues by 14%\nAnalyzed data access patterns using MongoDB's built-in\ntools, optimizing database performance and reducing query\ntimes by 12%\nOverhauled legacy code, achieving an 11% reduction in\ntechnical debt and enhancing system performance and\nreliability"
+  },
+  "director-of-software-engineering-resume-example.pdf": {
+    "file_name": "director-of-software-engineering-resume-example.pdf",
+    "name": "Renata Voss",
+    "email": "r.voss@email.com",
+    "skills": [
+      "JIRA",
+      "Amazon Web Services (AWS)",
+      "Jenkins",
+      "TensorFlow",
+      "Spring Boot",
+      "Apache Hadoop",
+      "IDPS",
+      "React Native",
+      "Selenium",
+      "Oracle"
+    ],
+    "education": [
+      "Bachelor of Science in Software Engineering, California Institute of Technology, 2006-2010, Pasadena, CA"
+    ],
+    "experience": [
+      "Director of Software Engineering at Adobe (2019 - current, San Jose, CA): Managed cross-functional teams, integrated IDPS, improved workflows with Jenkins, and achieved high user satisfaction ratings.",
+      "Senior Engineering Manager at PayPal (2014 - 2019, San Jose, CA): Resolved app incompatibility issues using AWS, incorporated agile practices, integrated React Native UI, and delivered user-centric solutions.",
+      "Principal Software Engineer at Intel (2010 - 2014, Santa Clara, CA): Optimized data processing with Apache Hadoop, automated testing with Selenium, led database upgrades on Oracle, and implemented cloud infrastructure optimizations."
+    ],
+    "summary": "Experienced Director of Software Engineering with a proven track record of leading high-performing teams and delivering innovative solutions in fast-paced environments. Skilled in cloud infrastructure, agile methodologies, and process optimization, Renata consistently achieves high user satisfaction and operational efficiency. Adept at integrating new technologies to improve product quality and security.",
+    "raw_text": "RENATA VOSS\nDIRECTOR OF SOFTWARE ENGINEERING\nCONTACT\nr.voss@email.com\n(123) 456-7890\nSan Jose, CA\nLinkedIn\nGithub\nEDUCATION\nBachelor of Science\nSoftware Engineering\nCalifornia Institute of\nTechnology\n2006 - 2010\nPasadena, CA\nSKILLS\nJIRA \nAmazon Web Services\n(AWS)\nJenkins\nTensorFlow\nSpring Boot\nApache Hadoop\nIDPS\nReact Native\nSelenium\nOracle\nWORK EXPERIENCE\nDirector of Software Engineering\nAdobe\n2019 - current / San Jose, CA\nManaged cross-functional team on Jira, increasing\nproduction velocity by 23%\nIntegrated IDPS into systems, which decreased instances of\nsuccessful socially engineered attacks to less than 1%\nBoosted processes through Jenkins-backed workflows that\nimproved the quality of outcomes by a 54% margin \nAchieved a 97% Net Promoter Score and a 4.7 out of 5\nrating from end users for error-free end products\nSenior Engineering Manager\nPayPal\n2014 - 2019 / San Jose, CA\nResolved app incompatibility issues with some mobile\ndevices using AWS, reducing user-reporting incidences by\n92%\nIncorporated agile best practices into core processes, which\nreduced average production cycle time by 17% across\nprojects\nDecreased mobile app density defects by 31% by\nintegrating React Native UI elements\nWorked within budget and timelines to deliver user-\neccentric solutions and maintained a user satisfaction rating\nof 94% through customer feedback surveys\nPrincipal Software Engineer\nIntel\n2010 - 2014 / Santa Clara, CA\nOptimized storage and dataset processing through Apache\nHadoop, resulting in a 47% increase in concurrent user\ncapacity\nAutomated web applications testing across browsers with\nSelenium that shrank user-reported defects by 68%\nLed a team of 4 software engineers to create and upgrade\ndatabases on Oracle with a consistent 98% on-time delivery\nrate\nImplemented cloud infrastructure optimizations, which\ndecreased monthly hosting costs by 28% and boosted\nsystem reliability"
+  },
+  "embedded-software-engineer-resume-example.pdf": {
+    "file_name": "embedded-software-engineer-resume-example.pdf",
+    "name": "Salvador Sanz",
+    "email": "salvador.sanz@email.com",
+    "skills": [
+      "Python",
+      "Perl",
+      "RISC CPUA",
+      "Operating System Hardware",
+      "RTOS",
+      "JTAG/SWD",
+      "C/C++",
+      "QEMU"
+    ],
+    "education": [
+      "Bachelor of Science in Computer Science, Carnegie Mellon University, 2007 - 2011, Pittsburgh, PA"
+    ],
+    "experience": [
+      "Senior Embedded Software Engineer at Dice (2019 - current): Contributed to software system architecture for 25+ applications, managed development programs and custom design tasks, and led product feature research and development.",
+      "Software Engineer III, Embedded Systems at Google (2015 - 2019): Architected, implemented, and maintained 50+ firmware/software designs, collaborated with multi-functional teams, and developed engineering tools for embedded products.",
+      "Research & Development Embedded Software Engineer at Superpedestrian (2011 - 2015): Built verification plans and tools, developed infrastructures for building and debugging, and coordinated software testing resources."
+    ],
+    "summary": "Proven and hard-working embedded software engineer with over 10 years of experience. Passionate about combining clean, scalable code with cutting-edge hardware to solve creative problems and enhance user experiences. Eager to contribute expertise to deliver improved solutions for Oracle consumers.",
+    "raw_text": "SALVADOR SANZ\nEmbedded Software Engineer\nsalvador.sanz@email.com\n(123) 456-7890\nDover, DE\nLinkedIn\nWORK EXPERIENCE\nSenior Embedded Software Engineer\nDice\n2019 - current\nDover, DE\nContributed to the design of software system architecture\nto establish a stable foundation for 25+ applications\nManaged 3 long-term development programs and 6\nshort-cycle custom design tasks\nOwned 100% of technical leadership responsibilities for\nproduct feature research and development\nSpearheaded all aspects of product development from\nsystem design to testing\nSoftware Engineer III, Embedded Systems\nGoogle\n2015 - 2019\nDover, DE\nArchitected, implemented, and maintained 50+ complex\nfirmware/software designs\nWrote clean, robust, testable, reusable, and sustainable\ncode tailored for embedded systems\nWorked with 4 multi-functional teams to determine\nsoftware architecture and specifications\nDeveloped and maintained 12+ engineering tools used to\ndebug, analyze, and test embedded products\nResearch & Development Embedded\nSoftware Engineer\nSuperpedestrian\n2011 - 2015\nDover, DE\nCollaborated with 3 multidisciplinary teams to build\nverification plans, frameworks, tools, and tests\nArchitected and developed 10+ tools and infrastructures\nto support efficient building, debugging, and deployment\nReviewed and updated 300+ software requirements and\ndesigns for verifiability\nCoordinated 100% of software testing resources (internal\n& external) and provided schedule estimates\nCAREER SUMMARY\nProven and hard-working\nembedded software engineer with\n10+ years of experience. My passion\nis combining clean and scalable\ncode with cutting-edge physical\nhardware, and I am eager to solve\ncreative problems for Oracle\nconsumers to create an improved\nuser experience.\nEDUCATION\nBachelor of Science\nComputer Science\nCarnegie Mellon University\n2007 - 2011\nPittsburgh, PA\nSKILLS\nPython\nPerl\nRISC CPUA\nOperating System Hardware\nRTOS\nJTAG/SWD\nC/C++\nQEMU"
+  },
+  "entrylevel-software-engineer-resume-example.pdf": {
+    "file_name": "entrylevel-software-engineer-resume-example.pdf",
+    "name": "Amie Claude",
+    "email": "amieclaude@email.com",
+    "skills": [
+      "Python (Django)",
+      "Java",
+      "Unix",
+      "Git",
+      "Javascript",
+      "SQL",
+      "HTML/CSS"
+    ],
+    "education": [
+      "B.S. Computer Science, University of Pittsburgh (September 2016 - April 2020), GPA: 3.7",
+      "Relevant Courses: Data Structures, Algorithm Design, Database Management Systems, Computer Vision, Software Design Methodology"
+    ],
+    "experience": [
+      "Software Engineer Intern, DICK's Sporting Goods (May 2020 - current): Designed improved software using algorithms to match users to products, participated in code reviews, tested and finetuned applications, and presented development reports to CTO and CEO.",
+      "Online Tutor, Easyke (December 2016 - April 2020): Planned and delivered targeted math and science lessons, provided feedback and progress reports, and boosted student mastery levels through individualized support."
+    ],
+    "summary": "Detail-oriented software engineer with proven experience in e-commerce software development and educational support. Skilled in Python, Java, and full-stack technologies, with a strong ability to solve problems and communicate effectively. Motivated to grow through mentorship and challenging projects at innovative companies.",
+    "raw_text": "AMIE CLAUDE\nSoftware Engineer\namieclaude@email.com\n(123) 456-7890\nPittsburgh, PA\nLinkedIn\nWORK EXPERIENCE\nSoftware Engineer Intern\nDICK's Sporting Goods\nMay 2020 - current\nPittsburgh, PA\n· Assigned to e-commerce team, and participated in\ndesigning improved software using algorithms to match\nusers to products, boosting sales by 16%\n· Participated in code reviews with product team, and\ngained feedback from senior engineers and experience\nin writing custom, scalable code\n· Partnered with 2 interns to understand user stories, and\nreported findings, goals, and progress to senior engineer\n· Tested and finetuned applications, reducing the\ninstances of bugs by 7%\n· Ensured all technical issues were ticketed, responding to\nTier 1 tickets and escalating issues at Tier 2\n· Presented software development and lifecycle reports to\nCTO and CEO with 2 other interns, receiving recognition\nfor design ideas and implementation\nOnline Tutor\nEasyke\nDecember 2016 - April 2020\nPittsburgh, PA\n· Planned lessons for small groups of 4-6 students,\nproviding 3 hours per week of targeted math and science\n· Communicated with students to discuss academic needs\nand goals in order to adjust lessons and assessments\n· Provided feedback on assignments, and retaught trouble\nareas until students reached 90% mastery\n· Engaged students in 1:1 discussions, small group\ndiscussions, and breakout sessions, utilizing various\ndiscussion methods to actively retain attention across a\nvariety of learning styles\n· Wrote progress reports and feedback to present to\nstudents and administration, working with admin to\nadjust student plans as needed\n· Built in office hours for 2 hours per week for students to\ncheck-in and receive one-on-one help, which boosted\ntheir mastery level by 13%\nCAREER\nOBJECTIVE\nProblem solver and strong\ncommunicator eager to prove my\nvalue and talent at an emerging\ncompany like Revature. Motivated\nto advance and expand my skill set\nthrough targeted mentorship and\nchallenging projects.\nEDUCATION\nB.S.\nComputer Science\nUniversity of Pittsburgh\nSeptember 2016 - April 2020\nPittsburgh, PA\nGPA: 3.7\nRELEVANT\nCOURSES\nData Structures\nAlgorithm Design\nDatabase Management Systems\nComputer Vision\nSoftware Design Methodology\nSKILLS\nAdvanced: Python (Django), Java,\nUnix, Git\nFamiliar: Javascript, SQL, HTML/CSS"
+  },
+  "experienced-software-engineer-resume-example.pdf": {
+    "file_name": "experienced-software-engineer-resume-example.pdf",
+    "name": "Kian Woods",
+    "email": "kianwoods@email.com",
+    "skills": [
+      "PyCharm",
+      "Mercurial",
+      "Ruby on Rails",
+      "Microsoft SQL Server",
+      "Google Cloud Platform",
+      "PHPUnit",
+      "OpenShift",
+      "CircleCI",
+      "C++",
+      "PyTorch"
+    ],
+    "education": [
+      "Bachelor of Science in Computer Science, Carnegie Mellon University (2013 - 2017)"
+    ],
+    "experience": [
+      "Software Engineer at Duolingo (August 2020 - current): Optimized machine learning algorithms with C++ for improved efficiency, developed AI-driven language pronunciation feedback with PyTorch, and increased development efficiency using PyCharm.",
+      "DevOps Engineer at PNC Financial Services (June 2017 - June 2020): Streamlined deployment with CircleCI, migrated databases to Microsoft SQL, developed Mercurial hooks, and automated vulnerability scanning.",
+      "Software Developer Intern at Vanguard (2016 - 2017): Refactored C++ code, conducted code reviews, migrated applications to AWS and Azure, and built a custom notification system with JavaScript and WebSocket."
+    ],
+    "summary": "Experienced software engineer with a strong background in optimizing machine learning algorithms and streamlining DevOps processes. Proven track record in improving development efficiency, deploying scalable solutions, and enhancing application performance. Skilled in collaborating with cross-functional teams to deliver impactful results in fast-paced environments.",
+    "raw_text": "KIAN WOODS\nEXPERIENCED SOFTWARE ENGINEER\nCONTACT\nkianwoods@email.com\n(123) 456-7890\nPittsburgh, PA\nLinkedIn\nEDUCATION\nBachelor of Science\nComputer Science\nCarnegie Mellon University\n2013 - 2017\nPittsburgh, PA\nSKILLS\nPyCharm\nMercurial\nRuby on Rails\nMicrosoft SQL Server\nGoogle Cloud Platform\nPHPUnit\nOpenShift\nCircleCI\nC++\nPyTorch\nCERTIFICATIONS\nCertified Software\nDevelopment Associate (IEEE)\nWORK EXPERIENCE\nSoftware Engineer\nDuolingo\nAugust 2020 - current / Pittsburgh, PA\nOptimized machine learning algorithms with a C++ library for a\n38% boost to the efficiency of language learning models.\nEmployed PyTorch to develop and improve the AI-driven\nlanguage pronunciation feedback system.\nUsed PyCharm as the primary IDE to increase development\nefficiency for a 27% reduction in bug-fixing time.\nWorked with data science team to integrate machine learning\nalgorithms to improved language model accuracy.\nDevOps Engineer\nPNC Financial Services\nJune 2017 - June 2020 / Pittsburgh, PA\nStreamlined deployment process by implementing CircleCI,\nreducing build times by 34% and increasing deployment\nfrequency by 61%.\nLed a team to migrate the company's database from MySQL to\nMicrosoft SQL and to decrease query times by 21%.\nDeveloped custom Mercurial hooks to enforce coding standards,\nreducing code review time by 13%.\nImproved software release pipeline security by automating\nvulnerability scanning and patching.\nSoftware Developer Intern\nVanguard\n2016 - 2017 / Remote\nAssisted in refactoring C++ code, helping to cut maintenance by\n14% and improving app performance.\nConducted code reviews under 2 senior developers.\nHelped migrate applications to AWS and Azure, which cut\ninfrastructure costs by 12% and aided application availability.\nBuilt a custom notification system with JavaScript and\nWebSocket, increasing user engagement by 23% and improving\nreal-time communication capabilities."
+  },
+  "faang-software-engineer-resume-example.pdf": {
+    "file_name": "faang-software-engineer-resume-example.pdf",
+    "name": "Selene Archer",
+    "email": "s.archer@email.com",
+    "skills": [
+      "Python",
+      "Git",
+      "Visual Studio Code",
+      "AWS",
+      "Docker",
+      "Jenkins",
+      "PostgreSQL",
+      "Apache Hadoop",
+      "Prometheus",
+      "React"
+    ],
+    "education": [
+      "Bachelor of Science in Computer Science, University of Washington, 2014 - 2018, Seattle, WA"
+    ],
+    "experience": [
+      "Software Engineer at Google (2023 - current): Maintained front-end components using React, improved user engagement, deployed Chrome extensions with AWS, and automated testing with Jenkins.",
+      "Junior Software Engineer at Expedia Group (2019 - 2023): Integrated Prometheus alerts, used Git for version control, developed a real-time booking system, and created Python scripts for data extraction.",
+      "Intern Software Engineer at T-Mobile USA (2018 - 2019): Integrated Docker into CI/CD pipelines, performed PostgreSQL tuning, migrated data to Hadoop, and resolved bugs for website stability."
+    ],
+    "summary": "Selene Archer is a results-driven software engineer with extensive experience in front-end development, cloud technologies, and DevOps practices. She has a proven track record of improving system performance, automating processes, and enhancing user engagement for leading tech companies. Selene excels in collaborative environments and consistently delivers impactful solutions.",
+    "raw_text": "SELENE ARCHER\nFAANG Software\nEngineer\ns.archer@email.com\n(123) 456-7890\nSeattle, WA\nLinkedIn\nEDUCATION\nBachelor of Science\nComputer Science\nUniversity of Washington\n2014 - 2018\nSeattle, WA\nSKILLS\nPython\nGit\nVisual Studio Code\nAWS\nDocker\nJenkins\nPostgreSQL\nApache Hadoop\nPrometheus\nReact\nWORK EXPERIENCE\nFAANG Software Engineer\nGoogle\n2023 - current\nSeattle, WA\nMaintained front-end components of Google’s help page\nusing React, boosting monthly user engagement metrics by\n21%.\nUsed Visual Studio Code for quick code editing, completing\ncoding tasks 2 quicker on average.\nDeveloped and deployed 8 extensions with the help of AWS,\nexpanding Google Chrome’s user base by 13%.\nAutomated various testing and deployment processes on\nJenkins, eliminating manual intervention on 64% of testing\ntasks.\nJunior Software Engineer\nExpedia Group\n2019 - 2023\nSeattle, WA\nIntegrated Prometheus alerts for proactive system\nmonitoring , reducing incident response time by 6 seconds.\nLeveraged Git for version control, ensuring seamless\ncollaboration among all junior developers and lowering\nmerge conflict incidents by 11%.\nAssisted in the development of a real-time booking system,\nenabling customers to book domestic and international\nflight tickets 7 minutes quicker.\nDeveloped Python scripts to scrape information from\nvarious websites, shortening the average data extraction\ntime by 4 seconds.\nIntern Software Engineer\nT-Mobile USA\n2018 - 2019\nSeattle, WA\nWorked alongside the DevOps team to integrate Docker into\nexisting CI/CD pipelines, mitigating failed deployment cases\nby 12%.\nHeld database health checks and performance tuning on\nPostgreSQL, decreasing latency by 26 ms.\nHelped senior engineers in migrating data from legacy\nsystems to Hadoop, cutting down T-Mobile’s data storage\ncosts by $36,558.\nResolved 19 bugs and issues reported by the QA team,\nimproving the stability of the main website."
+  },
+  "freelance-software-engineer-resume-example.pdf": {
+    "file_name": "freelance-software-engineer-resume-example.pdf",
+    "name": "David Nguyen",
+    "email": "d.nguyen@email.com",
+    "skills": [
+      "Python",
+      "Git",
+      "Visual Studio Code",
+      "Amazon Web Services",
+      "React",
+      "Django",
+      "MySQL",
+      "Trello",
+      "Selenium",
+      "Docker"
+    ],
+    "education": [
+      "Bachelor of Science in Computer Science, University of Wisconsin, 2014-2018, Madison, WI"
+    ],
+    "experience": [
+      "Freelance Software Engineer at Raven Software (2023 - current, Madison, WI): Developed Python automation scripts, built AWS cloud storage solutions, implemented React interfaces, and managed Git version control.",
+      "Junior Software Developer at Exact Sciences (2020 - 2023, Madison, WI): Engineered Django REST APIs, automated testing with Selenium, and collaborated using Trello for sprint management.",
+      "IT Support Technician at Epic Systems Corporation (2018 - 2020, Madison, WI): Administered Docker containers, resolved hardware/software issues, managed MySQL databases, and maintained incident logs."
+    ],
+    "summary": "David Nguyen is a versatile software engineer with experience in cloud solutions, automation, and full-stack development. He has a strong background in Python, AWS, and modern web technologies, contributing to process improvements and reliable software delivery. David excels in collaborative environments and is adept at optimizing workflows and system performance.",
+    "raw_text": "CONTACT\nd.nguyen@email.com\n(123) 456-7890\nMadison, WI\nLinkedIn\nEDUCATION\nBachelor of Science\nComputer Science\nUniversity of Wisconsin\n2014 - 2018\nMadison, WI\nSKILLS\nPython\nGit\nVisual Studio Code\nAmazon Web Services\nReact\nDjango\nMySQL\nTrello\nSelenium\nDocker\nWORK EXPERIENCE\nFreelance Software Engineer\nRaven Software\n2023 - current / Madison, WI\nAdvocated the use of Visual Studio Code to develop and\ndeploy Python scripts that automated data processing tasks\nBuilt cloud-based storage solutions handling over 12TB of\ndata storage using AWS Lambda and S3\nImplemented React-based user interfaces for internal tools\nManaged version control using Git, contributing to 52 pull\nrequests and stabilizing release cycles\nJunior Software Developer\nExact Sciences\n2020 - 2023 / Madison, WI\nEngineered Django REST APIs for patient data system\nintegration, handling 1,060+ queries/day\nContributed to knowledge-sharing sessions, helping new\ndevelopers integrate into 13 members quickly\nAutomated testing workflows with Selenium, executing\n342 tests across four browsers to ensure app reliability\nCollaborated with team members using Trello to manage\nsprints, aiding the timely delivery of nine feature updates\nIT Support Technician\nEpic Systems Corporation\n2018 - 2020 / Madison, WI\nAdministered Docker containers to streamline the\ndeployment of test environments\nTroubleshot and resolved hardware and software issues for\n18 employees, trimming downtime by 18%\nConducted regular database management tasks in MySQL,\noptimizing performance for over 43 critical healthcare apps\nMaintained detailed incident logs to track recurring issues\nand ensure quicker resolution in future cases\nFreelance Software Engineer\nDAVID NGUYEN"
+  },
+  "front-end-software-engineer-resume-example.pdf": {
+    "file_name": "front-end-software-engineer-resume-example.pdf",
+    "name": "Xavier Rivera",
+    "email": "x.rivera@email.com",
+    "skills": [
+      "HTML5",
+      "React.js",
+      "Git",
+      "Sass",
+      "Webpack",
+      "npm (Node Package Manager)",
+      "Visual Studio Code",
+      "Jest",
+      "Gulp",
+      "Bootstrap"
+    ],
+    "education": [
+      "Bachelor of Science in Computer Science, Stanford University, 2013 - 2017, Stanford, CA"
+    ],
+    "experience": [
+      "Front End Software Engineer at Asana (2021 - current): Created responsive web designs, optimized build processes with Webpack, automated testing with Jest, and migrated legacy code to React.js.",
+      "IT Support Specialist at Slack (2018 - 2021): Redesigned landing pages with Bootstrap, developed a Gulp plugin for asset optimization, integrated Sass functions, and conducted A/B testing for front-end designs.",
+      "Technical Support Specialist at Dropbox (2017 - 2018): Maintained batch scripts with Git, authored npm package guidelines, implemented automated error tracking, and led tech talks on Visual Studio Code."
+    ],
+    "summary": "Front End Software Engineer with over 7 years of experience specializing in modern web technologies and process optimization. Proven track record in improving website performance, automating workflows, and enhancing code quality across leading tech companies. Adept at collaborating with cross-functional teams to deliver efficient and scalable front-end solutions.",
+    "raw_text": "XAVIER RIVERA\nFront End Software Engineer\nx.rivera@email.com\n(123) 456-7890\nSan Francisco, CA\nLinkedIn\nWORK EXPERIENCE\nFront End Software Engineer\nAsana\n2021 - current\nSan Francisco, CA\nCreated responsive web designs using HTML5, reducing Asana’s\nmain website load time by 1.2 seconds.\nOptimized front-end build processes with Webpack, achieving a 2-\nweek decrease in build time, leading to faster deployment cycles.\nAutomated front-end testing with the help of Jest, growing average\nunit test coverage from 89% to 95%.\nCollaborated on the migration of legacy code to modern JavaScript\nframeworks, transitioning 172K+ lines of code to React.js.\nIT Support Specialist\nSlack\n2018 - 2021\nSan Francisco, CA\nAssisted in redesigning Slack’s landing pages on Bootstrap,\nincreasing mobile user engagement rates by 26% within two\nmonths.\nDeveloped a custom Gulp plugin to automate digital asset\noptimization, directly improving the main website’s annual SEO\nrankings.\nIntegrated Sass functions into the development workflow, enabling\nconcise styling features that helped developers use variables and\ncomplete front-end code 2 days quicker. \nConducted A/B testing on multiple front-end designs, which helped\nthe team find an 8% rise in positive feedback for the tested\nfeatures as per feedback emails.\nTechnical Support Specialist\nDropbox\n2017 - 2018\nSan Francisco, CA\nMaintained 39 batch scripts using Git to automate routine backup\nand sync tasks, allowing senior engineers to complete 4 more\ntasks every day. \nAuthored a detailed npm package guideline document, cutting\ndown compatibility issues across 2 development environments.\nUsed automated error tracking and resolution processes, lowering\nannual reported downtime incidents by 11%.\nHeld 14 tech talks on the effective use of Visual Studio Code,\nhelping interns learn how to enhance their overall code quality.\nEDUCATION\nBachelor of Science\nComputer Science\nStanford University\n2013 - 2017\nStanford, CA\nSKILLS\nHTML5\nReact.js\nGit\nSass\nWebpack\nnpm (Node Package Manager)\nVisual Studio Code\nJest\nGulp\nBootstrap"
+  },
+  "google-software-engineer-resume-example.pdf": {
+    "file_name": "google-software-engineer-resume-example.pdf",
+    "name": "Kian Marshall",
+    "email": "kianmarsh@email.com",
+    "skills": [
+      "JavaScript",
+      "Google Cloud SDK",
+      "Google Cloud Storage",
+      "Google Cloud Platform",
+      "Google Cloud Run",
+      "Google Cloud Natural Language API",
+      "React",
+      "Slack",
+      "Google Cloud Armor",
+      "Prometheus"
+    ],
+    "education": [
+      "M.S. Computer Science & Engineering, University of Washington, 2014 - 2016",
+      "B.S. Computer Science, Massachusetts Institute of Technology (MIT), 2010 - 2014"
+    ],
+    "experience": [
+      "Software Engineer, Microsoft (August 2018 - current): Developed and optimized Microsoft Office Suite features, implemented microservice architecture for cloud products, redesigned Windows OS components, led Azure cloud migration, and implemented CI/CD pipelines.",
+      "Junior Developer, Amazon (May 2015 - June 2018): Built custom integrations with Slack, improved web application security with Google Cloud Armor, optimized data retrieval with Google Cloud Storage, and enhanced app performance using Google Cloud Run.",
+      "Intern, Amazon (May 2014 - May 2015): Conducted market research, participated in QA testing, oversaw user testing, and shadowed senior team members for project management and software development experience."
+    ],
+    "summary": "Experienced software engineer with a strong background in cloud technologies, microservice architectures, and optimizing large-scale applications. Proven track record of improving system reliability, efficiency, and reducing operational costs at leading tech companies. Adept at collaborating across teams and driving impactful product enhancements.",
+    "raw_text": "KIAN MARSHALL\nGoogle Software Engineer\nkianmarsh@email.com\n(123) 456-7890\nRedmond, WA\nWORK EXPERIENCE\nSoftware Engineer\nMicrosoft\nAugust 2018 - current\nRedmond, WA\nDeveloped and optimized a Microsoft Office Suite feature with\nJavaScript to increase user efficiency by 15%.\nImplemented a microservice architecture for a cloud-based\nproduct, increasing system reliability and reducing deployment\ntime by 16%.\nSpearheaded the redesigning of a key Windows OS component to\nsee improved boot time by 29%.\nLed the migration of a critical application from on-premise to\nAzure cloud infrastructure, reducing operational costs by 32%.\nImplemented a CI/CD pipeline for a key product, reducing release\ncycle times by 26%.\nJunior Developer\nAmazon\nMay 2015 - June 2018\nSeattle, WA\nBuilt a custom integration between Amazon's internal tools and\nSlack via JavaScript, enhancing team productivity by 15%.\nImproved security of a web application by integrating Google\nCloud Armor, reducing the risk of DDoS attacks by 63%.\nReduced data retrieval times with Google Cloud Storage to store\nand manage large data sets for internal analytics project.\nOptimized the performance of a web application using Google\nCloud Run, which boosted concurrent users by 27%.\nIntern\nAmazon\nMay 2014 - May 2015\nSeattle, WA\nConducted market research and competitive analysis for a product\nlaunch, offering insights that boosted sales by 19%.\nParticipated in the QA testing process for a new application,\nidentifying and reporting 4 critical bugs.\nOversaw user testing for a new feature, gathering feedback that\ncontributed to a 26% improvement in usability.\nShadowed 3 senior team members to gain hands-on experience in\nproject management and software development.\nEDUCATION\nM.S.\nComputer Science & Engineering\nUniversity of Washington\n2014 - 2016\nSeattle, WA\nB.S.\nComputer Science\nMassachusetts Institute of\nTechnology (MIT)\n2010 - 2014\nCambridge, MA\nSKILLS\nJavaScript\nGoogle Cloud SDK\nGoogle Cloud Storage\nGoogle Cloud Platform\nGoogle Cloud Run\nGoogle Cloud Natural Language API\nReact\nSlack\nGoogle Cloud Armor\nPrometheus\nCERTIFICATIONS\nGoogle Associate Android Developer\nCertification"
+  },
+  "java-software-engineer-resume-example.pdf": {
+    "file_name": "java-software-engineer-resume-example.pdf",
+    "name": "Yvonne Green",
+    "email": "y.green@email.com",
+    "skills": [
+      "Java",
+      "Git",
+      "Visual Studio Code",
+      "MySQL",
+      "AWS",
+      "Docker",
+      "Jenkins",
+      "React",
+      "JUnit",
+      "Jira"
+    ],
+    "education": [
+      "Bachelor of Science in Computer Science and Engineering, Massachusetts Institute of Technology, 2013-2017, Cambridge, MA"
+    ],
+    "experience": [
+      "Java Software Engineer at DraftKings (2022 - current, Boston, MA): Optimized Java-based landing pages, executed JUnit tests for new functionalities, enhanced server security with AWS, and developed REST APIs for seamless data flow.",
+      "Full-Stack Developer at Akamai Technologies (2019 - 2022, Cambridge, MA): Optimized cloud-based applications using Docker, automated build/test sequences with Jenkins, improved code quality with style guides, and created error logging systems using React.",
+      "Junior Software Developer at HubSpot (2017 - 2019, Cambridge, MA): Maintained MySQL databases, fixed bugs in SaaS platform, managed Jira tickets, and assisted with code merges and deployment on Git."
+    ],
+    "summary": "Experienced Java Software Engineer with a strong background in developing and optimizing cloud-based and web applications. Proven track record in improving system performance, enhancing security, and streamlining development processes using modern technologies. Adept at collaborating with cross-functional teams to deliver reliable and scalable software solutions.",
+    "raw_text": "YVONNE GREEN\nJava Software Engineer\ny.green@email.com\n(123) 456-7890\nBoston, MA\nLinkedIn\nEDUCATION\nBachelor of Science\nComputer Science and\nEngineering\nMassachusetts Institute of\nTechnology\n2013 - 2017\nCambridge, MA\nSKILLS\nJava\nGit\nVisual Studio Code\nMySQL\nAWS\nDocker\nJenkins\nReact\nJUnit\nJira\nWORK EXPERIENCE\nJava Software Engineer\nDraftKings\n2022 - current\nBoston, MA\nOptimized existing Java-based landing pages, lowering\nload time by 46 ms while supporting 38K+ real-time users\nsimultaneously.\nExecuted JUnit tests for new website functionalities,\nachieving an 83% pass rate on the first deployment.    \nEnhanced the main server’s security using AWS security\ntools, resulting in a 12% decrease in potential security\nbreaches.\nDeveloped 2 REST APIs, successfully integrating with front-\nend systems and enabling seamless data flow across the\ncompany’s app and website.\nFull-Stack Developer\nAkamai Technologies\n2019 - 2022\nCambridge, MA\nWorked with 4 colleagues to optimize cloud-based\napplications for 8 clients with the help of Docker, improving\ntheir system’s response rate by 27%.\nAutomated build and test sequences on Jenkins, reducing\ntime spent on weekly manual tasks by 5.6 hours.\nRefined code quality across all projects by implementing\nand enforcing 2 style guides in Visual Studio Code.\nCreated an error logging and alerting system using React,\nslashing downtime instances by 17% with quick critical\nfailure identification.\nJunior Software Developer\nHubSpot\n2017 - 2019\nCambridge, MA\nAssisted senior developers to maintain 6 MySQL databases,\noptimizing query performance by up to 22% which boosted\nthe responsiveness of client-facing applications.\nContributed to fixing 11 bugs every month in HubSpot's SaaS\nplatform, supporting high system stability.\nManaged 75+ weekly tickets in Jira, achieving an average\nresolution time of less than 19 hours, meeting all the team's\nservice level agreement (SLA) conditions.\nRegularly helped in code merges and deployment on Git,\nsecuring a deployment success rate of 92% throughout\ntenure."
+  },
+  "junior-software-engineer-resume-example.pdf": {
+    "file_name": "junior-software-engineer-resume-example.pdf",
+    "name": "Aria Fischer",
+    "email": "a.fischer@email.com",
+    "skills": [
+      "Eclipse",
+      "Subversion (SVN)",
+      "C++",
+      "React",
+      "PostgreSQL",
+      "Microsoft Azure",
+      "Selenium"
+    ],
+    "education": [
+      "Bachelor of Science in Computer Science and Engineering, University of Michigan, 2013 - 2017"
+    ],
+    "experience": [
+      "IT Support Technician at Blue Cross Blue Shield of Michigan (August 2020 - current): Implemented Azure DevOps and Azure Storage solutions, migrated code repositories to SVN, resolved software license non-compliance, and automated IT tasks using Selenium.",
+      "Technical Support Representative at Comcast (December 2017 - June 2020): Achieved high customer satisfaction, upsold services, managed customer communications, and handled technical support calls.",
+      "Developer for StudySpot (2015 - 2017): Developed React-based mobile apps, managed code repositories with SVN, enforced data security protocols, and implemented analytics with Microsoft Azure."
+    ],
+    "summary": "Aria Fischer is a seasoned IT professional with extensive experience in software development, technical support, and cloud solutions. She has a proven track record of improving infrastructure efficiency, automating processes, and enhancing customer satisfaction. Aria is eager to leverage her skills in Eclipse and C++ as a Junior Software Engineer to contribute to innovative engineering projects.",
+    "raw_text": "ARIA FISCHER\nJunior Software Engineer\na.fischer@email.com\n(123) 456-7890\nSouthfield, MI\nlinkedin.com\nWORK EXPERIENCE\nIT Support Technician\nBlue Cross Blue Shield of Michigan\nAugust 2020 - current\nDetroit, MI\nImplemented Azure DevOps and Azure Storage cloud solutions,\nincreasing infrastructure efficiency by 13%.\nMigrated 54% of the organization's code repositories to Subversion\n(SVN) to streamline version control.\nResolved 20+ instances of software license non-compliance, saving\naround $54,000 in potential fines and penalties.\nAutomated 8 routine IT tasks using Selenium to free 11 hours of\nstaff time on average per week.\nTechnical Support Representative\nComcast\nDecember 2017 - June 2020\nAnn Arbor, MI\nAchieved a monthly customer satisfaction rating of 98%, ranking\nwithin the top 3% of Technical Support Representatives at Comcast.\nUpsold Comcast services to Xfinity Internet customers, generating\n$21,000+ in additional annual revenue.\nContacted customers with scheduled maintenance updates,\nreducing incoming calls by 65% on average.\nHandled 50+ support calls per day, addressing customer concerns\nrelated to product features and technical issues.\nPROJECTS\nDeveloper\nStudySpot\n2015 - 2017\nUsed React to create a seamless user interface on Android and iOS\napps, doubling monthly downloads in 7 months.\nImplemented a code repository management system using\nSubversion, boosting code collaboration efficiency by 34%.\nEnforced secure data transfer protocols and encryption\nmechanisms and ensured user data remained protected.\nIntroduced an analytics and reporting framework with Microsoft\nAzure, providing insights into user behavior and patterns.\nCAREER\nOBJECTIVE\nA seasoned IT professional passionate\nabout software development, seeking a\njunior software engineer role at Bosch.\nEager to apply my experience with\nEclipse and C++ to create high-quality\nsoftware products that contribute to the\ncompany's engineering efforts. \nEDUCATION\nBachelor of Science\nComputer Science and Engineering\nUniversity of Michigan\n2013 - 2017\nAnn Arbor, MI\nSKILLS\nEclipse\nSubversion (SVN)\nC++\nReact\nPostgreSQL\nMicrosoft Azure\nSelenium\nCERTIFICATIONS\nCertified Software Development\nProfessional (CSDP)"
+  },
+  "lead-software-engineer-resume-example.pdf": {
+    "file_name": "lead-software-engineer-resume-example.pdf",
+    "name": "Leander Hartman",
+    "email": "l.hartman@email.com",
+    "skills": [
+      "draw.io",
+      "Microsoft Project",
+      "Bitbucket",
+      "Oracle Enterprise Manager",
+      "Istio",
+      "CircleCI",
+      "Apache JMeter",
+      "Wireshark",
+      "Google Cloud Functions",
+      "Zoom"
+    ],
+    "education": [
+      "Master of Science in Software Engineering, Carnegie Mellon University, 2018 - 2020, Pittsburgh, PA",
+      "Bachelor of Science in Computer Science, Carnegie Mellon University, 2011 - 2015, Pittsburgh, PA"
+    ],
+    "experience": [
+      "Lead Software Engineer at Comcast (2020 - current): Led a team of 9 engineers to adopt Bitbucket, supervised version control migrations for a team of 78, held workshops on cloud technologies, and integrated CircleCI for CI/CD.",
+      "Software Engineer at Appian (2018 - 2020): Ported applications to cloud, automated tasks with Python scripts, ran performance testing, and developed serverless functions with Google Cloud Functions.",
+      "Technical Support Engineer at UPMC (2016 - 2018): Organized hospital-wide training on Zoom, conducted performance testing with Apache JMeter, used Wireshark for network analysis, and visualized patient flow processes with draw.io."
+    ],
+    "summary": "Lead Software Engineer with over 8 years of experience driving cloud adoption, automation, and team collaboration in large-scale environments. Proven track record in leading engineering teams, optimizing release cycles, and delivering impactful training programs. Skilled in cloud technologies, CI/CD, and performance optimization.",
+    "raw_text": "LEANDER HARTMAN\nLead Software Engineer\nl.hartman@email.com\n(123) 456-7890\nPhiladelphia, PA\nLinkedIn\nWORK EXPERIENCE\nLead Software Engineer\nComcast\n2020 - current\nPhiladelphia, PA\nLed a team of 9 engineers to adopt Bitbucket for version control,\nlowering merge conflicts by 39%.\nSupervised two major version control migrations for a team of 78,\nmaking code collaboration 41% easier on average according to\nfeedback. \nHeld 4 internal workshops on cloud technologies and current\nregulatory practices, enhancing team knowledge.\nIntegrated CircleCI for continuous integration/continuous\ndeployment (CI/CD), which allowed the team to quicken release\ncycles by 27 hours.\nSoftware Engineer\nAppian\n2018 - 2020\nPhiladelphia, PA\nAssisted in porting multiple applications to a cloud environment,\nreducing operational costs by $12,436 and maintaining a 98.9%\nuptime.\nAutomated repetitive tasks using Python scripts, saving 209\nmanual work hours annually.\nRan weekly performance testing sessions on critical software\ncomponents, fixing major bugs that improved system throughput\nby 61%.\nDeveloped and deployed 17 serverless functions with Google\nCloud Functions, resulting in 23-minute improvement in response\ntimes.\nTechnical Support Engineer\nUPMC\n2016 - 2018\nPittsburgh, PA\nOrganized a hospital-wide training program on Zoom, remotely\nteaching 54 staff members about the use of a new system. \nConducted performance testing using Apache JMeter to identify\nkey bottlenecks that were making the patient record system slower\nby 31%.\nUsed Wireshark for network analysis, successfully resolving 91% of\nnetwork issues within the first 21 hours of reporting.\nWorked with the clinical team to visualize 112 patient flow\nprocesses using draw.io.\nEDUCATION\nMaster of Science\nSoftware Engineering\nCarnegie Mellon University\n2018 - 2020\nPittsburgh, PA\nBachelor of Science\nComputer Science\nCarnegie Mellon University\n2011 - 2015\nPittsburgh, PA\nSKILLS\ndraw.io\nMicrosoft Project\nBitbucket\nOracle Enterprise Manager\nIstio\nCircleCI\nApache JMeter\nWireshark\nGoogle Cloud Functions\nZoom"
+  },
+  "mid-level-software-engineer-resume-example.pdf": {
+    "file_name": "mid-level-software-engineer-resume-example.pdf",
+    "name": "Adira Patel",
+    "email": "a.patel@email.com",
+    "skills": [
+      "Java",
+      "HTML/CSS",
+      "MySQL",
+      "Git",
+      "Jira",
+      "JUnit",
+      "Eclipse",
+      "Linux",
+      "Memcyco",
+      "Spring Boot",
+      "React Native"
+    ],
+    "education": [
+      "Bachelor of Science in Computer Science, University of Washington, 2015 - 2019, Seattle, WA"
+    ],
+    "experience": [
+      "Mid-Level Software Engineer at F5 Networks (2023 - current): Spearheaded Java coding workshop for 21+ developers, led PCI DSS compliance audit, bolstered fraud prevention with Memcyco, and automated repeatable testing on JUnit.",
+      "Junior Software Developer at Zulily (2020 - 2023): Tracked and fixed 61+ web application bugs using Jira, enhanced web load time through MySQL-optimized database storage, implemented React Native UI enhancements, and collaborated with a cross-functional team to improve system performance.",
+      "Software Developer Intern at ExtraHop Networks (2019 - 2020): Created HTML/CSS web pages, developed a Git-backed tool for code management, participated in rolling out Linux-encrypted servers, integrated UI upgrades, and improved site navigation and mobile responsiveness with Bootstrap 5."
+    ],
+    "summary": "Adira Patel is a mid-level software engineer with extensive experience in Java, web technologies, and database optimization. She has a proven track record of leading workshops, improving system performance, and automating testing processes. Adira excels in cross-functional collaboration and implementing solutions that enhance user experience and security.",
+    "raw_text": "ADIRA PATEL\nMid-Level Software\nEngineer\nCONTACT\na.patel@email.com\n(123) 456-7890\nSeattle, WA\nLinkedIn\nGithub\nEDUCATION\nBachelor of Science\nComputer Science\nUniversity of Washington\n2015 - 2019\nSeattle, WA\nSKILLS\nJava\nHTML/CSS\nMySQL\nGit\nJira\nJUnit\nEclipse\nLinux\nMemcyco\nSpring Boot\nReact Native\nCERTIFICATIONS\nAWS Certified Developer\nWORK EXPERIENCE\nMid-Level Software Engineer\nF5 Networks\n2023 - current\nSeattle, WA\nSpearheaded Java coding workshop for 21+ developers,\nimproving awareness and reducing code-related threats by\n37%\nLed PCI DSS compliance audit and found no non-compliance\ninstance\nBolstered fraud prevention with Memcyco and achieved a\n24% decrease in false positives \nAutomated repeatable testing on JUnit that expedited\napplications testing by 47% rate\nJunior Software Developer\nZulily \n2020 - 2023\nSeattle, WA\nTracked and fixed 61+ web application bugs using Jira, which\nresulted in a 97% reduction in crashes\nEnhanced web load time by 33% through MySQL-optimized\ndatabase storage \nImplemented React Native UI enhancements that resulted in\na 41% increase in average session duration\nCollaborated with a 7-member cross-functional team to build\nsoftware core features to improve system performance to\n114% \nSoftware Developer Intern\nExtraHop Networks\n2019 - 2020\nSeattle, WA\nCreated HTML/CSS web pages and reduced workload for the\ncore DevOps by 17% \nDecreased the frequency of code breakages to 7% by\ndeveloping a Git-backed tool for code management\nParticipated in rolling out Linux-encrypted web and database\nservers that enhanced overall system performance by 62%\nIntegrated UI upgrades into new cross-device access\napplications, achieving a 34% upsurge in positive user\nreviews  \nDecreased bounce rate by 18% by improving site navigation\nand enhancing mobile responsiveness with Bootstrap 5"
+  },
+  "new-grad-software-engineer-resume-example.pdf": {
+    "file_name": "new-grad-software-engineer-resume-example.pdf",
+    "name": "Fallon Winslow",
+    "email": "f.winslow@email.com",
+    "skills": [
+      "Visual Studio Code",
+      "Git",
+      "Python",
+      "Django",
+      "MySQL",
+      "OpenShift",
+      "IBM Cloud",
+      "Jenkins"
+    ],
+    "education": [
+      "Bachelor of Science in Computer Science, University of Washington, 2019 - 2023, Seattle, WA"
+    ],
+    "experience": [
+      "Software Engineer Intern at F5 Networks (2023 - current): Implemented a new authentication module in Python, upgraded Jenkins pipeline for CI, developed MySQL database schema, and designed a Django-based user interface.",
+      "CodeIt Project Team Member (2022): Integrated user feedback, created responsive web UI, optimized MySQL database, and expanded functionality with Python scripts.",
+      "CyberGuard Workshop Attendee (2021): Learned ethical hacking, Git for version control, built threat simulation models, and practiced secure coding with Visual Studio Code and Jenkins."
+    ],
+    "summary": "Detail-oriented Software Engineer Intern with hands-on experience in Python, Django, MySQL, and CI/CD pipelines. Proven track record of improving system security, optimizing database performance, and enhancing user adoption through innovative solutions. Adept at collaborating in team environments and integrating user feedback to drive project success.",
+    "raw_text": "FALLON\nWINSLOW\nSoftware Engineer\nIntern\nf.winslow@email.com\n(123) 456-7890\nSeattle, WA\nLinkedIn\nEDUCATION\nBachelor of Science\nComputer Science\nUniversity of Washington\n2019 - 2023\nSeattle, WA\nSKILLS\nVisual Studio Code\nGit\nPython\nDjango\nMySQL\nOpenShift\nIBM Cloud\nJenkins\nWORK EXPERIENCE\nSoftware Engineer Intern\nF5 Networks\n2023 - current\nSeattle, WA\nImplemented a new authentication module in Python,\nimproving system security compliance and saving an\nestimated $2,046 on potential breach risks\nUpgraded the Jenkins pipeline for continuous integration,\nspeeding up code deployment times by three hours\nDeveloped a MySQL database schema design, improving\ndata integrity and access speed by 39%\nDesigned a user-friendly interface for our internal tool using\nDjango, which increased user adoption by an extra 329 users\nwithin the first week alone\nPROJECTS\nCodeIt\nTeam Member\n2022\nSupervised the integration of user feedback into project\niterations, enhancing usability scores by 2 points on a scale\nof 0 to 10\nCreated a dynamic and responsive web UI with Visual Studio\nCode, resulting in a significant increase of 158 new users\nwithin the first day of launch alone\nFormulated strategies for database optimization in MySQL,\nwhich reduced query response times from an average of 12\nseconds to 4.8 seconds\nExpanded the application’s functionality by incorporating\nPython scripts for data analysis, increasing data processing\ncapacities by 2.7 GB per day\nCyberGuard Workshop\nWorkshop Attendee\n2021\nEngaged in a session focused on ethical hacking, learning to\nuse Git for version control to manage and maintain security\nscripts and tools\nBuilt a basic threat simulation model, which augmented my\nability to set up secure environments for applications\ndeployed using Jenkins pipelines\nIntroduced to the principles of secure coding practices,\nemploying Visual Studio Code for scanning and fixing over\n19 vulnerabilities in the codebase\nAcquired knowledge on building a basic threat simulation\nmodel, introducing me to the secure setup of CI/CD\npipelines using Jenkins"
+  },
+  "principal-software-engineer-resume-example.pdf": {
+    "file_name": "principal-software-engineer-resume-example.pdf",
+    "name": "Gaia Park",
+    "email": "gaia.park@email.com",
+    "skills": [
+      "Java",
+      "Python",
+      "JavaScript",
+      "C++",
+      "Oracle Cloud Infrastructure",
+      "Oracle Database",
+      "MongoDB",
+      "Red Hat OpenShift"
+    ],
+    "education": [
+      "University of California, Berkeley - M.S., Computer Science (2014 - 2016)",
+      "University of California, Berkeley - B.S., Electrical Engineering (2010 - 2014)"
+    ],
+    "experience": [
+      "Microsoft - Principal Software Engineer (October 2020 - current): Led migration of legacy Java applications to Python, built custom Eclipse plugin, architected and deployed solutions on Red Hat OpenShift, and spearheaded a new product launch.",
+      "3D Robotics - Software Tester (August 2017 - August 2020): Developed Python scripts for test automation, tested and optimized C++ applications, designed Java test frameworks, and created detailed test reports.",
+      "Aduro Biotech - Junior Software Developer (June 2014 - July 2017): Used Eclipse IDE for code development, designed unit tests, supported RESTful API development, and managed SQL/NoSQL database operations."
+    ],
+    "summary": "Gaia Park is a Principal Software Engineer with extensive experience in software development, automation, and cloud infrastructure. She has led successful migrations, product launches, and process optimizations at top tech companies. Gaia excels in designing scalable solutions and driving measurable improvements in code quality and efficiency.",
+    "raw_text": "Gaia Park\nPrincipal Software Engineer\ngaia.park@email.com\n(123) 456-7890\nRedmond, WA\nLinkedIn\nWORK EXPERIENCE\nMicrosoft - Principal Software Engineer\nOctober 2020 - current\nRedmond, WA\nLed the migration of legacy Java applications to Python, improving code maintainability by 12% and\nreducing bug rates by 16%\nBuilt custom Eclipse plugin that streamlined software development process, reducing build times by 24%\nArchitected and deployed solutions on Red Hat OpenShift, cutting time-to-market of mobile apps in half\nSpearheaded a new product launch, contributing $800K to annual revenue and a 5% rise in market share\n3D Robotics - Software Tester\nAugust 2017 - August 2020\nBerkeley, CA\nDeveloped Python scripts to automate functional and regression testing, increasing test coverage and\nreducing manual effort by 37%\nTested C++ applications, identifying bottlenecks and optimizing code to improve processing speed by 28%\nDesigned custom test automation frameworks using Java to enable faster feedback for developers\nCreated detailed test reports with actionable feedback, reducing post-release defects by 12%\nAduro Biotech - Junior Software Developer\nJune 2014 - July 2017\nBerkeley, CA\nUsed Eclipse IDE to write, debug, and maintain code, improving productivity by 21% and code quality by 7%\nDesigned unit tests for the development team for a 15% drop in production defects\nSupported the development of RESTful APIs, contributing to a 29% increase in third-party integrations\nSupported database operations for both SQL and NoSQL systems, improving query performance by 16%\nEDUCATION\nUniversity of California, Berkeley - M.S., Computer Science\n2014 - 2016\nBerkeley, CA\nUniversity of California, Berkeley - B.S., Electrical Engineering\n2010 - 2014\nBerkeley, CA\nSKILLS\nJava; Python; JavaScript; C++; Oracle Cloud Infrastructure; Oracle Database; MongoDB; Red Hat OpenShift\nHOBBIES\nCoding challenges and hackathons"
+  },
+  "python-developer-resume-example.pdf": {
+    "file_name": "python-developer-resume-example.pdf",
+    "name": "Giulia Gonzalez",
+    "email": "ggonzalez@email.com",
+    "skills": [
+      "HTML/CSS",
+      "SQL (PostgreSQL, Oracle)",
+      "JavaScript (Angular)",
+      "Python (Django)",
+      "REST APIs (GraphQL)",
+      "AWS (Redshift, S3)",
+      "Git"
+    ],
+    "education": [
+      "M.S. Computer Science, University of Chicago, 2014-2016",
+      "B.S. Computer Science, University of Pittsburgh, 2010-2014"
+    ],
+    "experience": [
+      "Python Developer at DoorDash (September 2017 - current): Built Angular components for customer web app, collaborated with agile team, improved test coverage, maintained data pipelines, and communicated with stakeholders.",
+      "Python Developer Intern at Knewton (April 2016 - April 2017): Implemented RESTful APIs in Django, built unit testing infrastructure, provided project updates, optimized database queries, and wrote scalable code with team."
+    ],
+    "summary": "Giulia Gonzalez is a Python Developer with extensive experience in building web applications, data pipelines, and RESTful APIs. She has a strong background in collaborating with agile teams and improving user experience through robust testing and feature prioritization. Giulia is skilled in modern technologies including Angular, Django, AWS, and SQL, and is committed to delivering impactful solutions.",
+    "raw_text": "GIULIA\nGONZALEZ\nPython Developer\nggonzalez@email.com\n(123) 456-7890\nDetroit, MI\nLinkedIn\nGithub\nEDUCATION\nM.S.\nComputer Science\nUniversity of Chicago\n2014 - 2016\nChicago, IL\nB.S.\nComputer Science\nUniversity of Pittsburgh\n2010 - 2014\nPittsburgh, PA\nSKILLS\nHTML/ CSS\nSQL (PostgreSQL, Oracle)\nJavaScript (Angular)\nPython (Django)\nREST APIs (GraphQL)\nAWS (Redshift, S3)\nGit\nWORK EXPERIENCE\nPython Developer\nDoorDash\nSeptember 2017 - current\nDetroit, MI\n· Worked on building new Angular components for the customer-\nfacing web app, which improved the time on page for the\naverage user by 2 minutes\n· Collaborated with an agile team of 6, and helped prioritize and\nscope feature requests to ensure that the biggest impact\nfeatures were worked on first\n· Built extensive test coverage for all new features, which reduced\nthe number of customer complaints by 23%\n· Acquired and ingested data to build and maintain data pipelines\nthat led to discovering an opportunity for a new site feature,\nboosting revenue by 6%\n· Communicated with internal teams and stakeholders, working\nto determine solutions for the user experience\nPython Developer Intern\nKnewton\nApril 2016 - April 2017\nChicago, IL\n· Worked alongside another developer to implement RESTful APIs\nin Django that enabled internal analytics team to increase\nreporting speed by 24%\n· Using Selenium, built out a unit testing infrastructure for a client\nweb application that reduced the number of bugs reported by\nthe client by 11% month over month\n· Provided project updates to leadership team of 3, and offered\nrecommendations for design\n· Diagnosed issues causing slow speeds in applications, and\ndocumented the process to making the database query system\nmore robust\n· Participated in writing scalable code with a team of 4 interns\nand 1 developer for applications for a math course\nPROJECTS\nCryptocurrency Price Tracker\nCreator\n· Incorporated API calls to several applications, and stored data\nefficiently in PostgreSQL backend\n· Utilized D3.js to allow users to dynamically visualize price\nmovements over time periods of their choosing"
+  },
+  "security-engineer-resume-example.pdf": {
+    "file_name": "security-engineer-resume-example.pdf",
+    "name": "Ilyia Kar Aslavov",
+    "email": "ilyia.karaslavov@email.com",
+    "skills": [
+      "Java",
+      "Spring",
+      "Hibernate",
+      "SQL",
+      "AWS",
+      "Azure",
+      "ITF+",
+      "A+",
+      "Project Management",
+      "Interpersonal",
+      "Communication"
+    ],
+    "education": [
+      "Bachelor of Science in Cybersecurity, Grand Canyon University, 2003-2005, Phoenix, AZ"
+    ],
+    "experience": [
+      "Senior Information Security Engineer at Wells Fargo (2015 - current, Chandler, AZ): Designed, built, configured, and deployed firewall, intrusion detection, and infrastructure automation technologies; investigated threats and vulnerabilities; automated AWS account provisioning; consulted on security technologies.",
+      "Network Security Engineer at Infosys (2010 - 2015, Phoenix, AZ): Designed and maintained cybersecurity software and hardware; converged IT and OT networks; maintained Process Control and Pipeline SCADA Networks.",
+      "Software Engineer at Voice Media Group (2007 - 2010, Phoenix, AZ): Responsible for engineering, testing, implementation, and maintenance of codebases; conducted statistical analysis; participated in all phases of software development.",
+      "Software/Java Engineer at SimuLogix (2005 - 2007, Phoenix, AZ): Led production for new products; partnered with developers and QA engineers; designed scalable enterprise web applications; updated tools and processes."
+    ],
+    "summary": "Experienced Security Engineer with a strong background in cybersecurity, software engineering, and cloud infrastructure. Proven track record in designing and deploying security solutions, automating processes, and reducing cyber risks for major organizations. Skilled in both technical and interpersonal aspects, with expertise in Java, AWS, and project management.",
+    "raw_text": "ILYIA KAR ASLAVOV\nSECURITY ENGINEER\nCONTACT\nilyia.karaslavov@email.com\n(123) 456-7890\nPhoenix, AZ\nLinkedIn\nEDUCATION\nBachelor of Science\nCybersecurity\nGrand Canyon University\n2003 - 2005\nPhoenix, AZ\nSKILLS\nJava\nSpring\nHibernate\nSQL\nAWS\nAzure\nITF+\nA+\nProject Management\nInterpersonal\nCommunication\nWORK EXPERIENCE\nSenior Information Security Engineer\nWells Fargo\n2015 - current / Chandler, AZ\nDesigned, built, configured, and deployed 50+ firewall, intrusion\ndetection, and infrastructure automation technologies\nIdentified and investigated 100% of threats and vulnerabilities,\nreducing the risk of successful cyber attacks by 83%\nSupported perimeter initiatives by automating and integrating the\nprovisioning of accounts in the AWS cloud\nProvided consultation on 181 technologies to address security gaps\nNetwork Security Engineer\nInfosys\n2010 - 2015 / Phoenix, AZ\nDesigned and maintained 100% of cybersecurity soft & hardware\nLaunched initiative to converge IT and OT networks, saving $48K a\nyear in labor costs and security initiatives\nMaintained Process Control Network and 3 Pipeline SCADA\nNetworks to ensure effectiveness, reliable operation, and security\nSoftware Engineer\nVoice Media Group\n2007 - 2010 / Phoenix, AZ\nResponsible for 100% of engineering, testing, implementation, and\nmaintenance of both code and codebases\nConducted statistical analysis and troubleshooting for site lead and\n4 key management personnel\nParticipated in all phases of software development, including initial\ndesign, prototype development, and production\nOverhauled outdated practices to develop algorithms, ensure\ncompliance, and conduct initial design stages for applications\nSoftware/Java Engineer\nSimuLogix\n2005 - 2007 / Phoenix, AZ\nLed production processes for 14 new products\nPartnered with software developers and quality assurance\nengineers to build and test 3 types of new products\nDesigned and developed 6 scalable enterprise web applications\nCollaborated with 4 engineers to update 20+ tools and processes"
+  },
+  "senior-software-engineer-resume-example.pdf": {
+    "file_name": "senior-software-engineer-resume-example.pdf",
+    "name": "Tasiana Ukura",
+    "email": "tukura@email.com",
+    "skills": [
+      "Python",
+      "JavaScript",
+      "C++",
+      "Java",
+      "Django",
+      "NodeJS",
+      "React",
+      "jQuery",
+      "Unix",
+      "Git",
+      "Selenium",
+      "SQL",
+      "PostgreSQL",
+      "MySQL",
+      "NoSQL",
+      "AWS"
+    ],
+    "education": [
+      "University of Washington - B.S., Computer Science (August 2004 - May 2008)"
+    ],
+    "experience": [
+      "Fast - Senior Software Engineer (October 2016 - current): Built and maintained applications for 2M daily users, led front-end development with React, mentored interns, and oversaw a team improving e-commerce platform payment protection.",
+      "Adaptiva - Software Engineer (May 2009 - October 2016): Developed cloud-based technologies with C++ and Java for Fortune 500 companies, improved content distribution and productivity, enhanced automation, and created project documentation.",
+      "Expedia Group - Software Engineer Intern (May 2008 - May 2009): Worked on full stack development of e-commerce systems, utilized Java and Python, recommended algorithm changes, and contributed to API redesign increasing revenue."
+    ],
+    "summary": "Tasiana Ukura is a seasoned software engineer with over 15 years of experience specializing in scalable application development and front-end technologies. She has a proven track record of leading teams, mentoring interns, and delivering impactful solutions for high-traffic platforms and Fortune 500 clients. Her expertise spans multiple programming languages, frameworks, and cloud technologies, consistently driving product improvements and business growth.",
+    "raw_text": "Tasiana Ukura\ntukura@email.com\n(123) 456-7890\nSeattle, WA\nLinkedIn\nWORK EXPERIENCE\nFast - Senior Software Engineer\nOctober 2016 - current\nSeattle, WA\n· Built and maintained application that scaled to 2M daily users, communicating with cross-functional\nteams regarding product and design\n· Transformed UIs using React, decreasing debugging time by 62% and increasing views by 31%\n· Focused on front-end development, providing mentorship and coaching to 6 interns each summer\n· Oversaw a team of 4 to write scalable code for the e-commerce platform that increase payment\nprotection by 15%\nAdaptiva - Software Engineer\nMay 2009 - October 2016\nSeattle, WA\n· Developed cloud-based technologies with C ++ and Java to assist Fortune 500 companies with scaling\ncontent distribution by 60% or more and increasing their productivity by 40% or more\n· Teamed up with current clients to understand needs for improved functionality, and communicated with\nengineers and clients to develop enhancements that boosted client satisfaction by 27%\n· Manipulated algorithms to align with marketing, sales, and solutions, improving automation by 32%\n· Drafted documentations delineating designs and specs for more than 20 projects\nExpedia Group - Software Engineer Intern\nMay 2008 - May 2009\nSeattle, WA\n· Worked with 5 other interns under the supervision of senior software engineer full stack development of\nthe e-commerce system\n· Received coaching and support from peers and senior software engineer, and gained practical experience\nin using Java and Python\n· Studied data structures to recommend changes in algorithms, which boosted online sales by 6%\n· Partnered with interns, using code composition to redesign a clean API that offered increased flexibility\nto to third parties, which generated a revenue increase of $1.5M\nEDUCATION\nUniversity of Washington - B.S., Computer Science\nAugust 2004 - May 2008\nSeattle, WA\nSKILLS\nLanguages: Python, JavaScript, C++, Java; Frameworks: Django, NodeJS, React; Tools: jQuery, Unix, Git,\nSelenium; Databases: SQL (PostgreSQL, MySQL), NoSQL, AWS"
+  },
+  "software-developer-resume-example.pdf": {
+    "file_name": "software-developer-resume-example.pdf",
+    "name": "Cynthia Dwayne",
+    "email": "cynthia@beamjobs.com",
+    "skills": [
+      "Python (Django)",
+      "SQL (PostgreSQL, MySQL)",
+      "Cloud (GCP, AWS)",
+      "JavaScript (ES6, React, Redux, Node.js)",
+      "Typescript",
+      "HTML/CSS",
+      "CI/CD"
+    ],
+    "education": [
+      "Bachelor of Science in Computer Science, University of Delaware (August 2008 - May 2012, Newark, DE)"
+    ],
+    "experience": [
+      "Software Developer at QuickBooks (January 2017 - current, New York, NY): Led cloud migration from AWS to GCP, saving $260,000 annually; developed modern customer experiences for 50,000+ users; mentored junior developers and documented best practices.",
+      "Front-End Developer at AMR (January 2014 - December 2016, New York, NY): Built reusable UI components; created MVP for delivery management platform; improved customer conversion rate by 17% through A/B testing.",
+      "Help Desk Analyst at Kelly (June 2012 - January 2014, New York, NY): Diagnosed and resolved technical issues for 30+ clients daily; maintained documentation; created and managed user accounts."
+    ],
+    "summary": "Cynthia Dwayne is a software developer with over 7 years of experience specializing in scalable, well-documented code and collaborative teamwork. She has a proven track record of leading cloud migrations, mentoring developers, and improving customer experiences. Cynthia is eager to contribute her expertise to a product-driven company like Acme Corp.",
+    "raw_text": "CYNTHIA DWAYNE\nSoftware Developer\nCONTACT\ncynthia@beamjobs.com\n(123) 456-7890\nBrooklyn, NY\nLinkedIn\nGithub\nCAREER OBJECTIVE\nThroughout my 7-year-plus\ncareer as a software developer, I\nhave focused on developing\nscalable and well-documented\ncode. I enjoy working\ncollaboratively but can also run\nwith projects independently.\nExcited about the prospect of\njoining a product-driven\ncompany like Acme Corp.\nEDUCATION\nBachelor of Science\nComputer Science\nUniversity of Delaware\nAugust 2008 - May 2012\nNewark, DE\nSKILLS\nPython (Django)\nSQL (PostgreSQL, MySQL)\nCloud (GCP, AWS)\nJavaScript (ES6, React, Redux,\nNode.js)\nTypescript\nHTML/ CSS\nCI/CD\nWORK EXPERIENCE\nSoftware Developer\nQuickBooks\nJanuary 2017 - current / New York, NY\n· Worked on the payments team to save time and improve cash\nflow for over 50,000 through the development of modern,\nresponsive customer experiences\n· Led the migration from AWS to GCP for the team to reduce\ncloud costs by $260,000 per year\n· Worked closely with the product team to re-configure the\nprocessing of invoices, saving customers over 125,000 manual\nhours of work per month\n· Mentored 3 junior front-end developers on the team on React,\nand documented best practices within the organization\nFront-End Developer\nAMR\nJanuary 2014 - December 2016 / New York, NY\n· Contributed to the in-house UI library to create reusable\ncomponents that saved 125+ hours of development per month\n· Created a web app MVP for a store delivery management\nplatform with 200+ business customers to create, manage, and\nmonitor deliveries using React and Redux\n· Added features to meditation app with 5,000+ monthly users,\nenabling audio and video uploads using React and Redux\n· Improved customer conversion rate by 17% through A/B\ntesting of different components and combinations,\nrepresenting $500,000+ in incremental annual revenue\nHelp Desk Analyst\nKelly\nJune 2012 - January 2014 / New York, NY\n· Diagnosed technical issues for 30+ clients per day by phone,\nemail, and chat, solving issues within 15 minutes on average\n· Successfully reached solutions for 92% of computer errors, and\nescalated more complex tickets to higher tiers to assist clients\nas quickly as possible\n· Created user accounts for 50+ clients per week, and assisted\nthem with setting up and customizing their accounts\n· Created and updated documentation as needed concerning\nnetwork, software, and hardware problems"
+  },
+  "software-development-engineer-resume-example.pdf": {
+    "file_name": "software-development-engineer-resume-example.pdf",
+    "name": "Seraphina Blake",
+    "email": "s.blake@email.com",
+    "skills": [
+      "Visual Studio Code",
+      "GitHub",
+      "Jenkins",
+      "Java",
+      "MySQL",
+      "Amazon Web Services",
+      "Docker",
+      "Ansible",
+      "React",
+      "JUnit"
+    ],
+    "education": [
+      "Bachelor of Science in Computer Science, University of Texas, 2012-2016"
+    ],
+    "experience": [
+      "Software Development Engineer at Hewlett Packard Enterprise (HPE), 2022 - current: Managed 27 GitHub repositories, released Java updates for diagnostics tools, led new feature development for HP QuickDrop, and optimized MySQL queries.",
+      "Software Developer at IBM, 2019 - 2022: Improved code quality with VS Code extensions, leveraged Jenkins for error log monitoring, automated unit testing with JUnit, and refactored legacy code to reduce maintenance costs.",
+      "Junior Software Developer at Oracle, 2016 - 2019: Implemented React components, deployed security patches with Ansible, assisted with project documentation, and used Docker Compose for multi-container applications."
+    ],
+    "summary": "Experienced Software Development Engineer with a strong background in full-stack development, database optimization, and automation across leading tech companies. Proven track record in improving software performance, code quality, and customer satisfaction. Adept at collaborating with cross-functional teams and implementing innovative solutions to streamline development processes.",
+    "raw_text": "SERAPHINA BLAKE\nSoftware Development Engineer \ns.blake@email.com\n(123) 456-7890\nHouston, TX\nLinkedIn\nWORK EXPERIENCE\nSoftware Development Engineer\nHewlett Packard Enterprise (HPE)\n2022 - current\nHouston, TX\nWorked with 3 engineers on GitHub, managing 27 repositories,\nwhich resulted in a 13% decrease in code conflicts.\nReleased multiple updates using Java for HP’s diagnostics tool,\nimproving its performance metrics by 11%. \nLed the development of a new software feature on HP QuickDrop,\nresulting in a 6% increase in customer satisfaction, as per\nanonymous in-app surveys.\nOptimized various MySQL database queries which eventually\nshortened query execution times to 3 ms.\nSoftware Developer\nIBM\n2019 - 2022\nAustin, TX\nEnhanced code quality by installing Visual Studio Code extensions,\ncurtailing monthly reported bugs on IBM’s website by 14%.\nLeveraged Jenkins plugins for monitoring 97% of all error logs and\nHTTPS requests, providing accurate data that helped the team\nboost build success rates by 21%.\nAutomated unit testing using JUnit, mitigating regression testing\ntime by 58 minutes.\nLowered codebase complexity by refactoring legacy code, cutting\ndown IBM’s maintenance costs by $6,491.\nJunior Software Developer\nOracle\n2016 - 2019\nAustin, TX\nHelped senior designers implement React components on landing\npages, growing UI consistency across 3 projects.\nDeployed security patches with the help of Ansible, eliminating 7\nsystem vulnerabilities.\nAssisted in the creation project documentation, reducing the\naverage onboarding time for new developers by one week.\nUsed Docker Compose for multi-container applications, expediting\ndevelopment environments and shortening setup times by 2 days. \nEDUCATION\nBachelor of Science\nComputer Science\nUniversity of Texas\n2012 - 2016\nAustin, TX\nSKILLS\nVisual Studio Code\nGitHub\nJenkins\nJava\nMySQL\nAmazon Web Services\nDocker\nAnsible\nReact\nJUnit"
+  },
+  "software-engineering-manager-resume-example.pdf": {
+    "file_name": "software-engineering-manager-resume-example.pdf",
+    "name": "Zara Greene",
+    "email": "zaragreen@email.com",
+    "skills": [
+      "Eclipse",
+      "Git",
+      "Docker",
+      "Amazon Web Services (AWS)",
+      "Jenkins",
+      "React.js",
+      "MySQL",
+      "Java"
+    ],
+    "education": [
+      "M.S. Computer Science with a concentration in Software Theory or Software Systems, Stanford University, 2010-2012",
+      "B.S. Computer Science, Carnegie Mellon University, 2006-2010"
+    ],
+    "experience": [
+      "Software Engineering Manager, Google LLC, May 2019 - April 2023: Led performance improvements using Docker, enhanced CI/CD pipelines with Jenkins, optimized MySQL databases, mentored junior engineers, and improved application architecture with AWS.",
+      "Systems Analyst, IBM, October 2015 - April 2019: Developed system monitoring tools in Java, implemented Git for version control, migrated legacy systems, improved UI with React.js, and managed databases with MySQL.",
+      "IT Support Technician, PNC Financial Services Group, September 2012 - September 2015: Resolved IT support tickets, used remote desktop tools, introduced a knowledge base, coordinated hardware upgrades, and supported remote workforce."
+    ],
+    "summary": "Experienced Software Engineering Manager with over a decade in technology roles, specializing in application performance, cloud services, and team leadership. Proven track record in optimizing systems and mentoring engineers to improve productivity and code quality. Adept at leveraging modern tools and methodologies to drive operational efficiency and innovation.",
+    "raw_text": "ZARA GREENE\nSOFTWARE ENGINEERING MANAGER\nCONTACT\nzaragreen@email.com\n(123) 456-7890\nMountain View, CA\nLinkedIn\nGithub\nEDUCATION\nM.S.\nComputer Science with a\nconcentration in Software\nTheory or Software Systems\nStanford University\n2010 - 2012\nStanford, CA\nB.S.\nComputer Science\nCarnegie Mellon University\n2006 - 2010\nPittsburgh, PA\nSKILLS\nEclipse\nGit\nDocker\nAmazon Web Services (AWS)\nJenkins\nReact.js\nMySQL\nJava\nCERTIFICATIONS\nAWS Certified Developer from\nAmazon Web Services\nWORK EXPERIENCE\nSoftware Engineering Manager\nGoogle LLC\nMay 2019 - April 2023 / Mountain View, CA\nBoosted application performance by 23% through the strategic use of\nDocker for containerization and deployment.\nEnhanced CI/CD pipelines by integrating Jenkins, accelerating release\ncycles by 21%.\nOptimized data storage and retrieval with MySQL, contributing to a\n29% increase in database performance.\nMentored 5 junior engineers on best practices, increasing their\nproductivity and improving code quality.\nImproved application architecture using AWS Cloud Services,\nreducing server response times by 28%.\nSystems Analyst\nIBM\nOctober 2015 - April 2019 / Armonk, NY\nDeveloped custom system monitoring tools using Java, improving\ninfrastructure stability by 29%.\nImplemented Git for version control and collaboration, reducing code\nconflicts by 15%.\nLed the migration of legacy systems to modern technology stacks,\nimproving system performance by 28%.\nEnhanced website interface design with React.js, boosting click-\nthrough rates by 24%.\nLeveraged MySQL for data management and analysis, boosting\ndatabase performance by 26%.\nIT Support Technician\nPNC Financial Services Group\nSeptember 2012 - September 2015 / Pittsburgh, PA\nResolved an average of 35 daily IT support tickets, resulting in a 28%\nincrease in end-user satisfaction.\nUsed remote desktop tools to provide timely and efficient support,\ndecreasing average ticket resolution time by 19%.\nIntroduced a centralized knowledge base, reducing ticket escalation\nrates by 23%.\nCoordinated with vendors for timely hardware replacements and\nupgrades, improving equipment reliability.\nProvided ongoing IT support for remote workforce, improving\nproductivity by 22%."
+  },
+  "software-engineer-intern-resume-example.pdf": {
+    "file_name": "software-engineer-intern-resume-example.pdf",
+    "name": "Caius Kessler",
+    "email": "ckessler@email.com",
+    "skills": [
+      "Visual Studio",
+      "Bitbucket",
+      "Oracle",
+      "Django",
+      "Windows",
+      "Java"
+    ],
+    "education": [
+      "B.S. Computer Science, University of Washington (September 2020 - current)",
+      "Relevant courses: Computer Science I and II, Discrete Mathematics, Data Structures and Algorithms, Computer Organization and Architecture, Operating Systems"
+    ],
+    "experience": [
+      "Data Entry Specialist, Expedia Group (May 2021 - current): Processed and entered travel records into Oracle databases, utilized Java-based tools for data import/export, developed Django-based web interface, generated data-driven insights, and gathered monthly reports.",
+      "Tech Pursuit Creator (2020 - 2021): Designed database architecture with Oracle, streamlined development with Visual Studio, implemented version control with Bitbucket, enhanced AI using Java, and conducted playtesting and user feedback analysis."
+    ],
+    "summary": "Highly-driven computer science student with hands-on experience in Bitbucket, Oracle, and Java, seeking to leverage technical and analytical skills in a software engineering role. Proven ability to develop web interfaces, optimize data processes, and collaborate on projects. Certified Azure Developer Associate ready to contribute to innovative technology solutions.",
+    "raw_text": "CAIUS KESSLER\nSoftware Engineer\nIntern\nckessler@email.com\n(123) 456-7890\nSeattle, WA\nLinkedIn\nEDUCATION\nB.S.\nComputer Science\nUniversity of Washington\nSeptember 2020 - current\nSeattle, WA\nRelevant courses\nComputer Science I and II\nDiscrete Mathematics\nData Structures and\nAlgorithms\nComputer Organization and\nArchitecture\nOperating Systems\nSKILLS\nVisual Studio\nBitbucket\nOracle\nDjango\nWindows\nJava\nHOBBIES\nFood Photography\nTravel Photography\nVideo editing and post-\nproduction\nCAREER OBJECTIVE\nHighly-driven computer science student with growing\nknowledge in Bitbucket, Oracle, and Java, seeking a software\nengineering internship at Microsoft. As a Microsoft Certified:\nAzure Developer Associate, I'm ready to contribute my passion\nand skills to help drive innovation as a global technology leader.\nWORK EXPERIENCE\nData Entry Specialist\nExpedia Group\nMay 2021 - current\nSeattle, WA\nProcessed and entered 1,200+ travel records per week into\nOracle databases.\nUtilized Java-based tools to import and export data,\nreducing data transfer time by 34%.\nDeveloped and deployed a Django-based web interface,\nincreasing data accessibility for remote team by 22%.\nGenerated data-driven insights, supporting key business\ndecisions and driving a 6% increase in revenue.\nGathered monthly reports on data entry metrics, helping\nstrategic planning and resource allocation.\nPROJECTS\nTech Pursuit\nCreator\n2020 - 2021\nDesigned a robust database architecture utilizing Oracle,\nenhancing game performance by 38%.\nStreamlined game development process by integrating\nVisual Studio, reducing overall project time by 11%.\nImplemented version control and collaboration using\nBitbucket, leading to a 21% decrease in code conflicts.\nEnhanced game character AI using Java, increasing positive\nuser reviews by 29%.\nConducted extensive playtesting and user feedback analysis\nevery month, eliminating game bugs.\nCERTIFICATIONS\nMicrosoft Certified: Azure Developer Associate\nOracle Certified Professional: Java SE 11 Developer"
+  },
+  "software-engineer-new-grad-resume-example.pdf": {
+    "file_name": "software-engineer-new-grad-resume-example.pdf",
+    "name": "Lysandra Vega",
+    "email": "lysandrav@email.com",
+    "skills": [
+      "Visual Studio Code",
+      "Git",
+      "MySQL",
+      "Django",
+      "Heroku",
+      "macOS",
+      "Python"
+    ],
+    "education": [
+      "B.S. Computer Engineering, Purdue University, September 2019 - April 2023, West Lafayette, IN"
+    ],
+    "experience": [
+      "Software Engineer Intern at Infosys (January 2022 - March 2023): Used Visual Studio Code for code editing and debugging, integrated third-party APIs with Python, optimized MySQL queries, streamlined CI/CD pipeline, and used Git for version control.",
+      "Academic Simulation Project, Group Leader (2019 - current): Developed backup and recovery strategies for macOS, implemented MySQL database schemas, employed Django ORM, and collaborated with a team to ensure timely delivery."
+    ],
+    "summary": "Recent computer engineering graduate with strong problem-solving skills and a commitment to excellence. Experienced in software engineering internships and academic projects, with expertise in Python, Git, and database optimization. Eager to contribute technical skills and collaborative spirit to a dynamic software engineering team.",
+    "raw_text": "LYSANDRA VEGA\nSoftware Engineer\nlysandrav@email.com\n(123) 456-7890\nIndianapolis, IN\nLinkedIn\nCAREER OBJECTIVE\nNew computer engineering graduate with strong problem-\nsolving skills and a commitment to excellence, seeking a\nsoftware engineer role at Salesforce. Excited to use my skill in\nGit and Python to support Salesforce's vision of helping\ncompanies connect with their customers in fresh ways.\nWORK EXPERIENCE\nSoftware Engineer Intern\nInfosys \nJanuary 2022 - March 2023\nIndianapolis, IN\nUsed Visual Studio Code for effective code editing and\ndebugging, increasing code quality by 18%.\nIntegrated third-party APIs with Python to enhance app\nfunctionality and increase user satisfaction by 24%.\nImproved database performance by optimizing MySQL\nqueries, boosting query response times by 11%.\nStreamlined the continuous integration and deployment\n(CI/CD) pipeline, reducing build times by 27%.\nCut merge conflicts by 13% using Git for version control\nand collaboration.\nPROJECTS\nAcademic Simulation Project\nGroup Leader\n2019 - current\nDeveloped backup and recovery strategies for macOS,\nincreasing data recovery speeds by 17%.\nImplemented efficient MySQL database schemas and\ndecreased data redundancy by 28%.\nEmployed Django ORM to manage database interactions,\nstreamlining and reducing development time by 19%.\nCollaborated with a team of 4 to ensure timely project\ndelivery while adhering to best practices.\nEDUCATION\nB.S.\nComputer Engineering\nPurdue University\nSeptember 2019 - April 2023\nWest Lafayette, IN\nSKILLS\nVisual Studio Code\nGit\nMySQL\nDjango\nHeroku\nmacOS\nPython\nCERTIFICATIONS\nCertified Software Development\nProfessional (CSDP)"
+  },
+  "software-engineer-resume-example.pdf": {
+    "file_name": "software-engineer-resume-example.pdf",
+    "name": "Charles McTurland",
+    "email": "cmcturland@email.com",
+    "skills": [
+      "Python (Django)",
+      "Javascript (NodeJS, ReactJS, jQuery)",
+      "SQL (MySQL, PostgreSQL, NoSQL)",
+      "HTML5/CSS",
+      "AWS",
+      "Unix",
+      "Git"
+    ],
+    "education": [
+      "B.S. Computer Science, University of Pittsburgh, September 2008 - April 2012, Pittsburgh, PA"
+    ],
+    "experience": [
+      "Software Engineer, Embark, January 2015 - current, New York, NY: Re-architected a multi-page web app into a single page application, boosting yearly revenue by $1.4M; constructed ad-serving platform for 35M users improving page speed by 15%; tested and documented software to increase efficiency by 18%; collaborated with engineers on college admissions platform.",
+      "Software Engineer, MarketSmart, April 2012 - January 2015, Washington, DC: Built RESTful APIs for JavaScript front-end handling 500,000+ concurrent users; developed NodeJS and Puppeteer.js tool to automate QA and monitoring, improving CTR by 3%; reviewed code and tested features increasing contributions by 12%.",
+      "Software Engineer Intern, Marketing Science Company, April 2011 - March 2012, Pittsburgh, PA: Implemented RESTful APIs in Django to increase reporting speed by 24%; built unit testing infrastructure with Selenium, reducing client-reported bugs by 11% month over month."
+    ],
+    "summary": "Experienced software engineer with over a decade of expertise in building scalable web applications and RESTful APIs. Proven track record of improving product performance and efficiency through innovative solutions and collaboration. Skilled in Python, JavaScript, cloud technologies, and leading engineering projects from conception to deployment.",
+    "raw_text": "CHARLES MCTURLAND\nSOFTWARE ENGINEER\nCONTACT\ncmcturland@email.com\n(123) 456-7890\nNew York, NY\nLinkedIn\nEDUCATION\nB.S.\nComputer Science\nUniversity of Pittsburgh\nSeptember 2008 - April 2012\nPittsburgh, PA\nSKILLS\nPython (Django)\nJavascript (NodeJS ReactJS,\njQuery)\nSQL (MySQL, PostgreSQL,\nNoSQL)\nHTML5/CSS\nAWS\nUnix, Git\nWORK EXPERIENCE\nSoftware Engineer\nEmbark\nJanuary 2015 - current / New York, NY\nWorked with product managers to re-architect a multi-page web\napp into a single page web-app, boosting yearly revenue by $1.4M\nConstructed the logic for a streamlined ad-serving platform that\nscaled to our 35M users, which improved the page speed by 15%\nafter implementation\nTested software for bugs and operating speed, fixing bugs and\ndocumenting processes to increase efficiency by 18%\nIterated platform for college admissions, collaborating with a group\nof 4 engineers to create features across the software\nSoftware Engineer\nMarketSmart\nApril 2012 - January 2015 / Washington, DC\nBuilt RESTful APIs that served data to the JavaScript front-end\nbased on dynamically chosen user inputs that handled over 500,000\nconcurrent users\nBuilt internal tool using NodeJS and Pupeteer.js to automate QA and\nmonitoring of donor-facing web app, which improved CTR by 3%\nReviewed code and conducted testing for 3 additional features on\ndonor-facing web app that increased contributions by 12%\nSoftware Engineer Intern\nMarketing Science Company\nApril 2011 - March 2012 / Pittsburgh, PA\nPartnered with a developer to implement RESTful APIs in Django,\nenabling analytics team to increase reporting speed by 24%\nUsing Selenium I built out a unit testing infrastructure for a client\napplication that reduced the number of bugs reported by the client\nby 11% month over month\nPROJECTS\nPoker Simulation\nBuilt a full-stack web app to allow users to simulate and visualize\noutcomes of poker hands against opponents of different play styles\nusing open source cards.js on the front-end\nUtilized sci-kit learn in Python to simulate possible outcomes under\ndifferent scenarios that the user chose"
+  },
+  "software-engineer-student-resume-example.pdf": {
+    "file_name": "software-engineer-student-resume-example.pdf",
+    "name": "Tina Cook",
+    "email": "t.cook@email.com",
+    "skills": [
+      "C++",
+      "Mercurial",
+      "Eclipse",
+      "MongoDB",
+      "OpenShift"
+    ],
+    "education": [
+      "Bachelor of Science in Computer Science, University of Washington, 2021 - current"
+    ],
+    "experience": [
+      "Customer Service Representative at T-Mobile (2023 - current): Provided on-call support to over 71 customers daily, resolved 92% of issues on first call, implemented C++ script to automate CRM data entry reducing report creation time by 39 minutes, prevented escalations for 8 billing issues monthly, managed high-volume inbound calls with an average response time under 44 seconds.",
+      "UI/UX Designer for PixelPilot (2022 - 2023): Designed and prototyped mobile app interface for drone control, achieved 87% user engagement rate, refined UI through user testing, decreased bug reports by 41%, debugged app using Eclipse, released ahead of schedule, used MongoDB for user data and drone records, improved data retrieval speed by 6 minutes.",
+      "Seminar Attendee for Blockchain Seminar (November 2021): Attended blockchain technology seminar, participated in hands-on workshops, scored 9.5/10 for Google Cloud Platform integration, optimized blockchain deployments on OpenShift, created proof-of-stake smart contract for healthcare, reduced data processing time by 17 minutes."
+    ],
+    "summary": "Passionate software engineer intern with hands-on experience in mobile app design and smart contract development. Demonstrated ability to automate processes and optimize data solutions, with a strong track record of delivering projects ahead of schedule and improving user engagement. Eager to contribute technical expertise and innovative thinking to drive impactful results in data visualization and software engineering.",
+    "raw_text": "TINA COOK\nSOFTWARE ENGINEER INTERN\nCONTACT\nt.cook@email.com\n(123) 456-7890\nSeattle, WA\nLinkedIn\nEDUCATION\nBachelor of Science\nComputer Science\nUniversity of Washington\n2021 - current\nSeattle, WA\nSKILLS\nC++\nMercurial\nEclipse\nMongoDB\nOpenShift\nCAREER OBJECTIVE\nPassionate software engineer intern with project experience designing a mobile\napplication design and POS-based smart contract development, aspiring to\nbring my expertise to Tableau Software. Excited to apply my skills in your firm to\ndrive innovative data visualization solutions.\nWORK EXPERIENCE\nCustomer Service Representative\nT-Mobile\n2023 - current / Seattle, WA\nProvided on-call support to a minimum of 71 customers daily, resolving\n92% of issues on the first call.\nImplemented a C++ script to automate CRM data entry tasks, reducing the\ntime needed to create reports by 39 minutes. \nPrevented escalations for 8 billing issues each month via quick resolutions.\nManaged high-volume inbound calls during peak hours, maintaining an\naverage response time of under 44 seconds.\nPROJECTS\nPixelPilot\nUI/UX Designer\n2022 - 2023\nDesigned and prototyped a mobile app interface for a drone control\napplication, gaining a 87% user engagement rate during the testing phase.\nHeld multiple user testing sessions, gathering feedback to refine the app’s\nuser interface and decrease post-launch bug reports by 41%.\nUsed Eclipse IDE to debug the mobile app, fixing critical issues and\nreleasing the application 3 weeks ahead of schedule.\nLeveraged MongoDB for storing user data and drone records, lowering\ndata retrieval speed by 6 minutes.\nBlockchain\nSeminar Attendee\nNovember 2021\nAttended a comprehensive blockchain technology seminar with 175+\nattendees, understanding its applications in finance and healthcare.\nParticipated in hands-on workshops on blockchain, achieving a 9.5/10\nreport score by industry experts for Google Cloud Platform integration.\nOptimized blockchain deployments on OpenShift, using seminar\nknowledge to expedite deployment time by 4 days.\nCreated a proof-of-stake smart contract for a healthcare setting, reducing\ndata processing time by 17 minutes compared to industry standards."
+  },
+  "software-qa-engineer-resume-example.pdf": {
+    "file_name": "software-qa-engineer-resume-example.pdf",
+    "name": "Isolde Mercer",
+    "email": "i.mercer@email.com",
+    "skills": [
+      "TestRail",
+      "Selenium",
+      "Bugzilla",
+      "TestLink",
+      "Jenkins",
+      "Apache JMeter",
+      "SQL Server Management Studio",
+      "BrowserStack",
+      "Firebase Test Lab"
+    ],
+    "education": [
+      "Bachelor of Science in Software Engineering, Rochester Institute of Technology, 2010 - 2014, Rochester, NY"
+    ],
+    "experience": [
+      "Software QA Engineer at DigitalOcean (2019 - current, New York, NY): Performed performance testing for 13 high-traffic applications, implemented QA strategies with TestRail, led regression tests, and executed load testing with Apache JMeter.",
+      "Associate QA Engineer at Peloton (2016 - 2019, New York, NY): Automated testing with Selenium, conducted mobile testing with Firebase Test Lab, assisted in product launches, and ensured data accuracy with SQL queries.",
+      "Junior Software Tester at Etsy (2014 - 2016, Brooklyn, NY): Used Bugzilla for bug reporting, integrated Jenkins for CI, managed test plans on TestLink, and performed cross-browser testing on BrowserStack."
+    ],
+    "summary": "Isolde Mercer is a skilled Software QA Engineer with over 9 years of experience in manual and automated testing across leading tech companies. She specializes in performance, regression, and load testing, utilizing tools such as Selenium, TestRail, and Apache JMeter to ensure high-quality software releases. Isolde has a proven track record of improving testing efficiency, reducing bug leakage, and supporting successful product launches.",
+    "raw_text": "ISOLDE MERCER\nSoftware QA Engineer\ni.mercer@email.com\n(123) 456-7890\nNew York, NY\nLinkedIn\nEDUCATION\nBachelor of Science\nSoftware Engineering\nRochester Institute of\nTechnology\n2010 - 2014\nRochester, NY\nSKILLS\nTestRail\nSelenium\nBugzilla\nTestLink\nJenkins\nApache JMeter\nSQL Server Management\nStudio\nBrowserStack\nFirebase Test Lab\nJenkins\nWORK EXPERIENCE\nSoftware QA Engineer\nDigitalOcean\n2019 - current\nNew York, NY\nCarried out performance testing for 13 high-traffic\napplications, finding and resolving current bottlenecks, and\nimproving load times by 9 minutes. \nImplemented multiple QA strategies using TestRail,\nreducing bug leakage by 11%.\nLed weekly regression tests, spotting 86% of critical bugs\nbefore production deployment.\nExecuted load testing scenarios for DigitalOcean’s main\nwebsite on Apache JMeter, supporting 11,458 simultaneous\nusers without any drop in performance.\nAssociate QA Engineer\nPeloton\n2016 - 2019\nNew York, NY\nAutomated testing procedures using Selenium, reducing\nmanual testing time by 16 minutes and increasing test\ncoverage by almost 29%.\nConducted mobile testing on Firebase Test Lab, achieving a\n97% success rate in discovering and fixing device-specific\nissues within deadlines. \nAssisted in the successful launch of 3 major fitness\nequipment products for Peloton, meeting all quality\nbenchmarks and regulations.\nEnsured 94% data accuracy in test environments with\nextensive SQL queries for data validation.  \nJunior Software Tester\nEtsy\n2014 - 2016\nBrooklyn, NY\nUsed Bugzilla to identify and report 204 bugs on Etsy’s\nofficial website, contributing to a 21% improvement in\nresolving monthly bug issues.\nIntegrated Jenkins for continuous integration, decreasing\ndeployment times for new features by 2 days. \nManaged test plans on TestLink for 17 projects, ensuring\ndetailed documentation and tracking process. \nPracticed cross-browser testing on BrowserStack for Etsy’s 4\nnew landing pages, ensuring compatibility and a high-\nquality UX across various platforms."
+  }
+}

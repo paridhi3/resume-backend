@@ -21,7 +21,7 @@ client = AzureOpenAI(
     azure_endpoint=os.getenv("AZURE_OPENAI_ENDPOINT"),
 )
 
-embedding_model = SentenceTransformer("all-MiniLM-L6-v2")
+embedding_model = SentenceTransformer("all-MiniLM-L6-v2", device="cpu")
 METADATA_FILE = "metadata.json"
 
 # -------------------------
@@ -43,11 +43,9 @@ def process_and_save_resume(uploaded_file, resume_text):
     - Use LLM to extract name, skills, education, experience, summary
     - Save structured data to metadata.json (skip if already exists)
     """
-    # 1. Regex for email and phone
+    # 1. Regex for email
     email_match = re.search(r"[\w\.-]+@[\w\.-]+", resume_text)
-    phone_match = re.search(r"\+?\d[\d\s\-]{8,}\d", resume_text)
     email = email_match.group(0) if email_match else None
-    phone = phone_match.group(0) if phone_match else None
 
     # 2. Ask LLM for structured parsing
     prompt = f"""
@@ -76,7 +74,7 @@ def process_and_save_resume(uploaded_file, resume_text):
     # Parse JSON safely
     try:
         parsed_llm = json.loads(re.sub(r"```json|```", "", llm_output))
-    except:
+    except json.JSONDecodeError:
         parsed_llm = {"name": None, "skills": [], "education": [], "experience": [], "summary": llm_output}
 
     # 3. Merge regex + LLM results
@@ -84,7 +82,6 @@ def process_and_save_resume(uploaded_file, resume_text):
         "file_name": uploaded_file.name,
         "name": parsed_llm.get("name"),
         "email": email,
-        "mobile_number": phone,
         "skills": parsed_llm.get("skills", []),
         "education": parsed_llm.get("education", []),
         "experience": parsed_llm.get("experience", []),
@@ -160,18 +157,30 @@ Education:
 """
 
     prompt = f"""
-You are an AI-powered ATS.
-Analyze how well a resume matches a job description.
-Consider skills, experience, education, and keywords.
+You are an AI-powered Applicant Tracking System (ATS).
+Your task is to analyze how well a given resume matches a job description.
+You must consider **skills, experience, education, and keywords**.
 
-Return output strictly in valid JSON:
+Return output strictly in **valid JSON** with this schema:
 {{
   "category": "Suitable / Maybe / Not Suitable",
-  "final_score": "0-100",
-  "reasons": ["reason 1", "reason 2", "reason 3"]
+  "final_score": "0-100 (improved ATS score after reasoning)",
+  "reasons": [
+    "reason 1",
+    "reason 2",
+    "reason 3"
+  ]
 }}
 
-Baseline similarity score: {baseline_score}
+Instructions:
+1. First, consider the baseline similarity score: {baseline_score}.
+2. Adjust the final_score based on skills, experience, and job requirements.
+3. Place the resume in one of three categories:
+   - Suitable: strong match (generally >70)
+   - Maybe: partial match, missing some skills (40–70)
+   - Not Suitable: weak match (<40)
+4. Provide 3-5 clear, specific reasons for your decision.
+5. Do not add any text outside of the JSON format.
 
 Job Description:
 {jd_text}
@@ -204,40 +213,31 @@ else:
     jd_text = st.text_area("Paste Job Description text here")
 
 resume_files = st.file_uploader("Upload Resumes (PDF)", type=["pdf"], accept_multiple_files=True)
+
+# Placeholder for dynamic results
+result_placeholder = st.empty()
 results = []
 
-if jd_text and resume_files:
-    for resume_file in resume_files:
-        resume_text = extract_text_from_pdf(resume_file)
-        parsed = process_and_save_resume(resume_file, resume_text)
-        baseline_score = compute_similarity(jd_text, parsed["raw_text"])
-        llm_result_str = analyze_with_llm(jd_text, parsed, baseline_score)
-        llm_result = parse_llm_json(llm_result_str)
+if jd_text and resume_files and st.button("🚀 Start Resume Analysis"):
+        for resume_file in resume_files:
+            resume_text = extract_text_from_pdf(resume_file)
+            parsed = process_and_save_resume(resume_file, resume_text)
+            baseline_score = compute_similarity(jd_text, parsed["raw_text"])
+            llm_result_str = analyze_with_llm(jd_text, parsed, baseline_score)
+            llm_result = parse_llm_json(llm_result_str)
 
-        if llm_result.get("category") == "Error":
-            st.warning(f"⚠️ Failed to parse LLM output for {resume_file.name}: {llm_result['reasons'][0]}")
-            continue
+            if llm_result.get("category") == "Error":
+                st.warning(f"⚠️ Failed to parse LLM output for {resume_file.name}: {llm_result['reasons'][0]}")
+                continue
 
-        results.append({
-            "Candidate": resume_file.name,
-            "Baseline Score": baseline_score,
-            "Final Score": llm_result.get("final_score"),
-            "Category": llm_result.get("category"),
-            "Reasons": " | ".join(llm_result.get("reasons", []))
-        })
+            results.append({
+                "Candidate": resume_file.name,
+                "Baseline Score": baseline_score,
+                "Final Score": llm_result.get("final_score"),
+                "Category": llm_result.get("category"),
+                "Reasons": " | ".join(llm_result.get("reasons", []))
+            })
 
-# -------------------------
-# Display Results
-# -------------------------
-if results:
-    df = pd.DataFrame(results)
-    st.subheader("📊 Results")
-    st.dataframe(df, use_container_width=True)
-
-    csv = df.to_csv(index=False).encode("utf-8")
-    st.download_button(
-        "Download Results as CSV",
-        data=csv,
-        file_name="resume_analysis.csv",
-        mime="text/csv"
-    )
+            # Update results dynamically
+            df = pd.DataFrame(results)
+            result_placeholder.dataframe(df, use_container_width=True)
